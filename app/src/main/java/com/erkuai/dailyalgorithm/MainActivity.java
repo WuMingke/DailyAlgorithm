@@ -14,12 +14,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         //1.冒泡排序
         /**
-         * 比较相邻元素
+         * 比较相邻元素;循环n-1次，两两比较
          */
         int[] numbers = new int[]{3,2,1,4,8,0,6};
         int[] bubbleSort = bubbleSort(numbers);
-        Log.i("algorithm", Arrays.toString(bubbleSort));
+        //Log.i("algorithm", Arrays.toString(bubbleSort));
 
+        //2.快速排序
+        /**
+         *
+         */
     }
 
     private int[] bubbleSort(int[] numbers){
