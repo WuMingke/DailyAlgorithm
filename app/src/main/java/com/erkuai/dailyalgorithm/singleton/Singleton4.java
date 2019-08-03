@@ -1,4 +1,4 @@
-package com.erkuai.dailyalgorithm.Singleton;
+package com.erkuai.dailyalgorithm.singleton;
 
 /**
  * Created by Administrator on 2019/8/3.
