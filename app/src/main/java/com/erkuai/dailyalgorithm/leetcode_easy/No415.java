@@ -18,7 +18,17 @@ public class No415 {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public String addStrings(String num1, String num2) {
-            return num1;
+            int carry = 0;
+            StringBuilder builder = new StringBuilder();
+            for (int i = num1.length() - 1, j = num2.length() - 1; i >= 0 || j >= 0; i--, j--) {
+                int a = (i >= 0) ? num1.charAt(i) - '0' : 0;
+                int b = (j >= 0) ? num2.charAt(j) - '0' : 0;
+                int sum = a + b + carry;
+                builder.append(sum % 10);
+                carry = sum / 10;
+            }
+            if (carry > 0) builder.append("1");
+            return builder.reverse().toString();
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
