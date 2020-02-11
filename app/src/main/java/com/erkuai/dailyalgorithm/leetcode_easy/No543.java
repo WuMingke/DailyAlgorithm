@@ -24,18 +24,32 @@ public class No543 {
 
 
 //leetcode submit region begin(Prohibit modification and deletion)
+
     /**
      * Definition for a binary tree node.
      * public class TreeNode {
-     *     int val;
-     *     TreeNode left;
-     *     TreeNode right;
-     *     TreeNode(int x) { val = x; }
+     * int val;
+     * TreeNode left;
+     * TreeNode right;
+     * TreeNode(int x) { val = x; }
      * }
      */
     class Solution {
+
+        private int max = 0;
+
         public int diameterOfBinaryTree(TreeNode root) {
-            return 1;
+            depth(root);
+            return max;
+        }
+
+        private int depth(TreeNode root) {
+            if (root == null) return 0;
+            int leftDepth = depth(root.left);
+            int rightDepth = depth(root.right);
+            max = Math.max(leftDepth + rightDepth, max);
+            return Math.max(leftDepth, rightDepth) + 1;
+
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
