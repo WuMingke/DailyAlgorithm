@@ -29,7 +29,7 @@ public class No70 {
 
 
     //leetcode submit region begin(Prohibit modification and deletion)
-    class Solution {
+    static class Solution {
         public int climbStairs(int n) {
             if (n == 1) return 1;
             int[] steps = new int[n + 1];
@@ -42,6 +42,12 @@ public class No70 {
             }
             return steps[n];
         }
+    }
+
+    public static void main(String[] args) {
+
+        Solution solution = new Solution();
+        System.out.println(solution.climbStairs(1));
     }
 //leetcode submit region end(Prohibit modification and deletion)
 
