@@ -13,7 +13,7 @@
 
         </activity>
 
-        <activity android:name=".TestActivity">
+        <activity android:name=".TestActivity"  android:configChanges="orientation">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
