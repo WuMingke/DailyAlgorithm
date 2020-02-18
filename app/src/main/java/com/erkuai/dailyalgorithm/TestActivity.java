@@ -1,5 +1,6 @@
 package com.erkuai.dailyalgorithm;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -86,5 +87,9 @@ public class TestActivity extends AppCompatActivity {
     public void showTestDialog(View view) {
         TestDialog testDialog = new TestDialog();
         testDialog.show(getFragmentManager(), "");
+    }
+
+    public void showAnotherActivity(View view) {
+        startActivity(new Intent(this, Test2Activity.class));
     }
 }
