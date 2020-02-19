@@ -11,6 +11,8 @@ import com.erkuai.dailyalgorithm.algorithm.FindNumber;
 import com.erkuai.dailyalgorithm.algorithm.PrintListReversing;
 import com.erkuai.dailyalgorithm.algorithm.ReplaceBlank;
 
+import java.util.LinkedHashMap;
+
 
 /**
  * Created by Administrator on 2019/8/3.
@@ -26,6 +28,9 @@ public class TestActivity extends AppCompatActivity {
         super.onStart();
 
         Log.i(TAG, "onStart()");
+
+
+        LinkedHashMap<Integer, Integer> map = new LinkedHashMap<>();
     }
 
     @Override
