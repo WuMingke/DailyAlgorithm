@@ -31,13 +31,14 @@ public class No35 {
 //
 // Related Topics 数组 二分查找
 
+    /**
+     * 1
+     */
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int searchInsert(int[] nums, int target) {
-            if (nums[nums.length - 1] < target) {
-                return nums.length - 1;
-            }
+
             int left = 0;
             int right = nums.length - 1;
             while (left <= right) {

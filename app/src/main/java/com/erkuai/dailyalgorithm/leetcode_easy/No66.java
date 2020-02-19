@@ -23,19 +23,27 @@ public class No66 {
 //
 // Related Topics 数组
 
+    /**
+     * 1
+     */
 
     //leetcode submit region begin(Prohibit modification and deletion)
-    class Solution {
+    static class Solution {
         public int[] plusOne(int[] digits) {
             for (int i = digits.length - 1; i >= 0; i--) {
                 digits[i]++;
                 digits[i] = digits[i] % 10;
                 if (digits[i] != 0) return digits;
             }
+            //最高位有进位，则是+1长度的新数组，首位为1，其他位为0
             digits = new int[digits.length + 1];
             digits[0] = 1;
             return digits;
         }
+    }
+
+    public static void main(String[] args) {
+
     }
 //leetcode submit region end(Prohibit modification and deletion)
 

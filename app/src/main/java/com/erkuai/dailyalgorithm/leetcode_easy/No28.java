@@ -26,6 +26,9 @@ public class No28 {
 // Related Topics 双指针 字符串
 
 
+    /**
+     * 1
+     */
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
@@ -47,8 +50,8 @@ public class No28 {
 
             for (int i = fromIndex; i <= max; i++) {
                 /* Look for first character. */
-                if (haystack.charAt(i)!= first) {
-                    while (++i <= max && haystack.charAt(i) != first);
+                if (haystack.charAt(i) != first) {
+                    while (++i <= max && haystack.charAt(i) != first) ;
                 }
 
                 /* Found first character, now look at the rest of v2 */
@@ -56,7 +59,8 @@ public class No28 {
                     int j = i + 1;
                     int end = j + targetLength - 1;
                     for (int k = 1; j < end && haystack.charAt(j)
-                            == needle.charAt(k); j++, k++);
+                            == needle.charAt(k); j++, k++)
+                        ;
 
                     if (j == end) {
                         /* Found whole string. */
