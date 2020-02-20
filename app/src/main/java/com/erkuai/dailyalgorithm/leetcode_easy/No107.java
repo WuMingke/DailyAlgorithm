@@ -43,6 +43,15 @@ public class No107 {
      * TreeNode(int x) { val = x; }
      * }
      */
+
+    /**
+     * LinkedList 是一个继承于AbstractSequentialList的双向链表。
+     * 它也可以被当作堆栈、队列或双端队列进行操作。
+     */
+
+    /**
+     * 1
+     */
     class Solution {
         public List<List<Integer>> levelOrderBottom(TreeNode root) {
             ArrayList<List<Integer>> result = new ArrayList<>();
@@ -55,6 +64,7 @@ public class No107 {
                 int size = treeNodes.size();
                 for (int i = 0; i < size; i++) {
                     TreeNode treeNode = treeNodes.remove();
+                    //自上而下添加
                     list.add(treeNode.val);
                     if (treeNode.left != null) {
                         treeNodes.add(treeNode.left);
@@ -65,7 +75,7 @@ public class No107 {
                 }
                 result.add(list);
             }
-
+            //自下而上显示
             Collections.reverse(result);
             return result;
         }

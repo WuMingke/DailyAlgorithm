@@ -64,7 +64,6 @@ public class TestActivity extends AppCompatActivity {
             }
         };
 
-
         ExecutorService service = Executors.newFixedThreadPool(CORE_POOL_SIZE);
         service.submit(new Runnable() {
             @Override

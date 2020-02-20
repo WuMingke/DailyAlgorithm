@@ -53,6 +53,10 @@ public class No100 {
      * TreeNode(int x) { val = x; }
      * }
      */
+
+    /**
+     * 1
+     */
     class Solution {
         public boolean isSameTree(TreeNode p, TreeNode q) {
             if (p == null && q == null) return true;

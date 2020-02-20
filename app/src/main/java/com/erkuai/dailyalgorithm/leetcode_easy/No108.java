@@ -34,17 +34,27 @@ public class No108 {
      * TreeNode(int x) { val = x; }
      * }
      */
+
+    /**
+     * 1
+     */
     class Solution {
         public TreeNode sortedArrayToBST(int[] nums) {
             return ToBST(nums, 0, nums.length - 1);
         }
 
         public TreeNode ToBST(int nums[], int left, int right) {
-            if (left > right) return null;//定义的二分区间为[left,right]，无法进行继续递归，直接退出
-            int mid = (int) (left + right) / 2;//二分中值
+            //定义的二分区间为[left,right]，无法进行继续递归，直接退出
+            if (left > right) return null;
+            //二分中值
+            int mid = (int) (left + right) / 2;
             TreeNode root = new TreeNode(nums[mid]);
-            root.left = ToBST(nums, left, mid - 1);//注意mid-1 对左半部分进行递归
-            root.right = ToBST(nums, mid + 1, right);//注意mid+1 对右半部分进行递归
+
+            //注意mid-1 对左半部分进行递归
+            root.left = ToBST(nums, left, mid - 1);
+
+            //注意mid+1 对右半部分进行递归
+            root.right = ToBST(nums, mid + 1, right);
             return root;
         }
 
