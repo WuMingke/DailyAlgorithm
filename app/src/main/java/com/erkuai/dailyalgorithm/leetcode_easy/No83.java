@@ -29,6 +29,10 @@ public class No83 {
      * ListNode(int x) { val = x; }
      * }
      */
+
+    /**
+     * 1
+     */
     class Solution {
         public ListNode deleteDuplicates(ListNode head) {
             ListNode currentNode = head;

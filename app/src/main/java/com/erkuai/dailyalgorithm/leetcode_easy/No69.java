@@ -23,23 +23,27 @@ public class No69 {
 //
 // Related Topics 数学 二分查找
 
+    /**
+     * 1
+     */
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int mySqrt(int x) {
-            if (x == 0) return 0;
-            long left = 1;
-            long right = x / 2;
-            while (left < right) {
-                long mid = (left + right + 1) >>> 1;
-                long square = mid * mid;
-                if (square > x) {
-                    right = mid - 1;
-                } else {
-                    left = mid;
-                }
+            if (x < 2) return x;
+
+            long num;
+            int pivot, left = 2, right = x / 2;
+            while (left <= right) {
+                pivot = (right + left) / 2;
+                num = (long) pivot * pivot;
+                if (num > x) right = pivot - 1;
+                else if (num < x) left = pivot + 1;
+                else return pivot;
             }
-            return (int) left;
+
+            return right;
+
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)

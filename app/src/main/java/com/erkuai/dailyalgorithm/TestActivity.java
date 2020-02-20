@@ -2,7 +2,15 @@ package com.erkuai.dailyalgorithm;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Debug;
+import android.os.Handler;
+import android.os.Looper;
+import android.os.Message;
+import android.os.MessageQueue;
+import android.os.Trace;
 import android.support.annotation.Nullable;
+import android.support.v4.os.TraceCompat;
+import android.support.v4.util.Pools;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -12,6 +20,9 @@ import com.erkuai.dailyalgorithm.algorithm.PrintListReversing;
 import com.erkuai.dailyalgorithm.algorithm.ReplaceBlank;
 
 import java.util.LinkedHashMap;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 
 /**
@@ -20,17 +31,73 @@ import java.util.LinkedHashMap;
 
 public class TestActivity extends AppCompatActivity {
 
+
     //    private static final String TAG = "ALGORITHM";
     private static final String TAG = "life_test";
+
+    private static Handler handler = new Handler(){
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+
+        }
+    };
+
+    private static final int CPU_COUNT = Runtime.getRuntime().availableProcessors();
+    private static final int CORE_POOL_SIZE = Math.max(2, Math.min(CPU_COUNT - 1, 4));
 
     @Override
     protected void onStart() {
         super.onStart();
 
+//        Debug.startMethodTracing("");
+//        Debug.stopMethodTracing();
+
+//        TraceCompat.beginSection("");
+//        TraceCompat.endSection();
+
+
+        MessageQueue.IdleHandler idleHandler = new MessageQueue.IdleHandler() {
+            @Override
+            public boolean queueIdle() {
+                return false;
+            }
+        };
+
+
+        ExecutorService service = Executors.newFixedThreadPool(CORE_POOL_SIZE);
+        service.submit(new Runnable() {
+            @Override
+            public void run() {
+
+            }
+        });
+
+        CountDownLatch countDownLatch = new CountDownLatch(1);
+        countDownLatch.countDown();
+        try {
+            countDownLatch.await();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+
         Log.i(TAG, "onStart()");
 
 
         LinkedHashMap<Integer, Integer> map = new LinkedHashMap<>();
+
+
+        Looper.prepare();
+        Looper.loop();
+
+        handler.post(new Runnable() {
+            @Override
+            public void run() {
+
+            }
+        });
+
     }
 
     @Override

@@ -27,6 +27,9 @@ public class No70 {
 //
 // Related Topics 动态规划
 
+    /**
+     * 1
+     */
 
     //leetcode submit region begin(Prohibit modification and deletion)
     static class Solution {

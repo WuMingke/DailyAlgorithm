@@ -24,6 +24,9 @@ public class No67 {
 //输出: "10101"
 // Related Topics 数学 字符串
 
+    /**
+     * 1
+     */
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
