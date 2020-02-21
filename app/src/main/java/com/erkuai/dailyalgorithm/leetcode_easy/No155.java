@@ -26,11 +26,20 @@ public class No155 {
 //
 // Related Topics 栈 设计
 
+    /**
+     * 1
+     */
 
-    //leetcode submit region begin(Prohibit modification and deletion)
+
+    /**
+     * 相同点：大家都返回栈顶的值。
+     * 不同点：peek 不改变栈的值(不删除栈顶的值)，pop会把栈顶的值删除。
+     */
+
     class MinStack {
 
         private Stack<Integer> stack;
+        //用一个栈来存最小值
         private Stack<Integer> minStack;
 
         /**

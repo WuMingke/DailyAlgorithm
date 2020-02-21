@@ -30,6 +30,7 @@ public class No1 {
                 map.put(nums[i], i);
             }
             throw new IllegalArgumentException("No two sum solution");
+
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)

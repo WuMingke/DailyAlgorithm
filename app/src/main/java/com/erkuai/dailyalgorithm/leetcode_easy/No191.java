@@ -42,13 +42,15 @@ public class No191 {
 // Related Topics 位运算
 
 
+    /**
+     * 1
+     */
 
-    //leetcode submit region begin(Prohibit modification and deletion)
     public class Solution {
         // you need to treat n as an unsigned value
         public int hammingWeight(int n) {
 
-            //任何数字跟掩码 11 进行逻辑与运算，都可以让我们获得这个数字的最低位。检查下一位时，我们将掩码左移一位。
+            //任何数字跟掩码 1 进行逻辑与运算，都可以让我们获得这个数字的最低位。检查下一位时，我们将掩码左移一位。
 
             int bits = 0;
             int mask = 1;

@@ -42,6 +42,10 @@ public class No226 {
      *     TreeNode(int x) { val = x; }
      * }
      */
+
+    /**
+     * 1
+     */
     class Solution {
         public TreeNode invertTree(TreeNode root) {
 

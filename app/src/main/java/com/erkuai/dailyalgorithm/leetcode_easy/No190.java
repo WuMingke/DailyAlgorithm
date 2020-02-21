@@ -35,26 +35,41 @@ public class No190 {
 //如果多次调用这个函数，你将如何优化你的算法？
 // Related Topics 位运算
 
+    /**
+     * 1
+     */
 
-
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 颠倒：
+     * 同十进制的颠倒是一样的
+     * <p>
+     * base-10：
+     * ans = ans * 10 + n % 10；
+     * n = n / 10；
+     * <p>
+     * base-2：
+     * ans = ans * 2 + n % 2；
+     * n = n / 2；
+     * 或者：
+     * ans =（ans << 1）|（n & 1）;用｜和用 + 是一样的
+     * ans >>= 1;
+     */
     public class Solution {
         // you need treat n as an unsigned value
         public int reverseBits(int n) {
-        //直接把二进制的每一位安排到最终位置上; 时间复杂度O(N), 空间复杂度O(1)
 
             int res = 0;
-            for(int i=0; i<32; i++){
-                //每次都处理二进制的最低位, 这样方便进行&操作
-                int cur = n&1;
-                //直接把二进制的最低位安排到最终位置上, 不过怎么安排左移和右移???? 蠢蛋, 不存在右移!!
-                res = res + (cur<<(31-i));
-                //update
-                n = n>>1;
+            for (int i = 0; i < 32; i++) {
+                res = (res << 1) | (n & 1);
+                n = n >> 1;
             }
             return res;
 
         }
+    }
+
+    public static void main(String[] args) {
+        System.out.println((int) (2 & 1));
     }
 //leetcode submit region end(Prohibit modification and deletion)
 

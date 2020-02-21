@@ -39,6 +39,8 @@ public class No175 {
 
    // ${question.code}
    /*
+   //因为表 Address 中的 personId 是表 Person 的外关键字，
+        所以我们可以连接这两个表来获取一个人的地址信息。
 
    select FirstName, LastName, City, State from Person left join Address on Person.PersonId = Address.PersonId;
 

@@ -21,7 +21,10 @@ public class No169 {
 // Related Topics 位运算 数组 分治算法
 
 
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
+    //在数组中出现次数大于 ⌊ n/2 ⌋ 的元素，那么必然经过中点
     class Solution {
         public int majorityElement(int[] nums) {//求众数
             Arrays.sort(nums);

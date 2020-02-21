@@ -21,15 +21,20 @@ public class No204 {
 // Related Topics 哈希表 数学
 
 
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
+
     static class Solution {
         public static int countPrimes(int n) {
-            //埃拉托斯特尼筛法
             boolean[] isPrim = new boolean[n];
+            // 将数组都初始化为 true
             Arrays.fill(isPrim, true);
-            for (int i = 2; i * i < n; i++)
+
+            for (int i = 2; i < n; i++)
                 if (isPrim[i])
-                    for (int j = i * i; j < n; j += i)
+                    // i 的倍数不可能是素数了
+                    for (int j = 2 * i; j < n; j += i)
                         isPrim[j] = false;
 
             int count = 0;

@@ -30,15 +30,21 @@ public class No189 {
 //
 // Related Topics 数组
 
+    /**
+     * 1
+     */
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public void rotate(int[] nums, int k) {
 
-            //旋转数组 k 次， k\%nk%n 个尾部元素会被移动到头部，剩下的元素会被向后移动。
+            //旋转数组 k 次， k%n 个尾部元素会被移动到头部，剩下的元素会被向后移动。
             k %= nums.length;
+            //全部反转，该在前面的就让他们在前面
             reverse(nums, 0, nums.length - 1);
+            //反转前k个
             reverse(nums, 0, k - 1);
+            //反转后n-k个
             reverse(nums, k, nums.length - 1);
         }
         public void reverse(int[] nums, int start, int end) {

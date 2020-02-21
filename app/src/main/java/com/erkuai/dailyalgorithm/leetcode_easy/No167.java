@@ -22,6 +22,12 @@ public class No167 {
 
 
     //leetcode submit region begin(Prohibit modification and deletion)
+
+    /**
+     * 1
+     */
+
+    //不能将这个方法用于No1，因为这里已知顺序，那个题没有知道顺序
     class Solution {
         public int[] twoSum(int[] numbers, int target) {
             int low = 0;

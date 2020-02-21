@@ -36,7 +36,11 @@ public class No168 {
 // Related Topics 数学
 
 
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
+
+    //相当于26进制
     class Solution {
         public String convertToTitle(int n) {
             StringBuilder stringBuilder = new StringBuilder();
@@ -48,6 +52,10 @@ public class No168 {
             return stringBuilder.reverse().toString();
 
         }
+    }
+
+    public static void main(String[] args) {
+        System.out.println((char) (1 + 'A'));
     }
 //leetcode submit region end(Prohibit modification and deletion)
 

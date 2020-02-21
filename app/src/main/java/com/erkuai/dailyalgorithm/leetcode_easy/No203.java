@@ -24,6 +24,11 @@ public class No203 {
      * ListNode(int x) { val = x; }
      * }
      */
+
+    /**
+     * 1
+     */
+
     class Solution {
         public ListNode removeElements(ListNode head, int val) {
             if (head == null) return null;

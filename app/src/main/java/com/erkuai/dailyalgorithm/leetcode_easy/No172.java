@@ -20,8 +20,11 @@ public class No172 {
 // Related Topics 数学
 
 
+    /**
+     * 1
+     */
 
-    //leetcode submit region begin(Prohibit modification and deletion)
+    //去找有多少个5
     class Solution {
         public int trailingZeroes(int n) {
             int count = 0;

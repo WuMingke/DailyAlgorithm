@@ -24,7 +24,16 @@ public class No219 {
 // Related Topics 数组 哈希表
 
 
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * index差值在k以内
+     *
+     *
+     * 滑动窗口
+     */
+
+    /**
+     * 1
+     */
     class Solution {
         public boolean containsNearbyDuplicate(int[] nums, int k) {
             HashSet<Integer> set = new HashSet<>();

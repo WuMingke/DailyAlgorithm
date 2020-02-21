@@ -23,6 +23,16 @@ public class No198 {
 // Related Topics 动态规划
 
 
+    /**
+     * 如果要打劫第n家，就必然不能打劫第n-1家，
+     * 所以打劫第n家得到的钱一共是第n家的钱加上前n-2家获得的最多的钱，
+     * 即：f(n-2)+nums(n)，如果不打劫第n家，获得的最大收益就是f(n-1)，
+     * 两者我们要去较大的那个，所以动态转移方程是：f(n)=max(nums[n]+f(n-2),f(n-1))
+     */
+
+    /**
+     * 1
+     */
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int rob(int[] nums) {

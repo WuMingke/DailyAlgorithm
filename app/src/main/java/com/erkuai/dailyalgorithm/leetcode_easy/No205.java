@@ -32,7 +32,12 @@ public class No205 {
 // Related Topics 哈希表
 
 
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
+
+    // 唯一映射
+
     class Solution {
         public boolean isIsomorphic(String s, String t) {
             Map<Character, Character> map = new HashMap<>();

@@ -32,6 +32,11 @@ public class No234 {
      * ListNode(int x) { val = x; }
      * }
      */
+
+    /**
+     * 1
+     */
+
     class Solution {
         /*
                 使用快慢指针找到链表的中间位置；
@@ -72,6 +77,7 @@ public class No234 {
             }
 
             // 前后半链表逐一比较，当链表长度为奇数时前半段链表长度比后半段多1，所以以后半段为准
+            // pre是后半段的
             while (pre != null) {
                 if (slow.val != pre.val) {
                     return false;

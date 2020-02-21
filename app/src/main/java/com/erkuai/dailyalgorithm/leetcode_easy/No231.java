@@ -8,19 +8,27 @@ public class No231 {
 //
 // 输入: 1
 //输出: true
-//解释: 20 = 1
+//解释: 2^0 = 1
 //
 // 示例 2:
 //
 // 输入: 16
 //输出: true
-//解释: 24 = 16
+//解释: 2^4 = 16
 //
 // 示例 3:
 //
 // 输入: 218
 //输出: false
 // Related Topics 位运算 数学
+
+    /**
+     * 2^0 = 1
+     * 2^1 = 10
+     * 2^2 = 100
+     * 2^3 = 1000
+     * ...
+     */
 /*
 
     若 n = 2^x
@@ -32,7 +40,10 @@ public class No231 {
 */
 
 
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
+
     class Solution {
         public boolean isPowerOfTwo(int n) {
             return n > 0 && (n & (n - 1)) == 0;

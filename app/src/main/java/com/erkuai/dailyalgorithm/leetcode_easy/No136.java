@@ -20,9 +20,14 @@ public class No136 {
 //输出: 4
 // Related Topics 位运算 哈希表
 
+    /**
+     * 1
+     */
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
+
+        //两个不同的数异或为1，两个相同的数异或为0，0与任何数做异或都是 那个数
         public int singleNumber(int[] nums) {
             //异或
             int ans = nums[0];

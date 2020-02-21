@@ -19,15 +19,27 @@ public class No202 {
 // Related Topics 哈希表 数学
 
 
+    /**
+     * 方法：使用“快慢指针”思想找出循环：
+     * “快指针”每次走两步，“慢指针”每次走一步，当二者相等时，即为一个循环周期。
+     * 此时，判断是不是因为1引起的循环，是的话就是快乐数，否则不是快乐数。
+     *
+     * 打印一下结果就知道了
+     */
+
+    /**
+     * 1
+     */
 
     //leetcode submit region begin(Prohibit modification and deletion)
-    class Solution {
+    static class Solution {
         public boolean isHappy(int n) {
             int slow = n, fast = n;
             do{
                 slow = bitSquareSum(slow);
                 fast = bitSquareSum(fast);
                 fast = bitSquareSum(fast);
+              //  System.out.println("slow = "+slow+"-----fast = "+fast);
             }while(slow != fast);
 
             return slow == 1;
@@ -45,6 +57,11 @@ public class No202 {
             return sum;
         }
 
+    }
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        System.out.println(solution.isHappy(11));
     }
 //leetcode submit region end(Prohibit modification and deletion)
 

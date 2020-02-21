@@ -58,7 +58,13 @@ public class No141 {
      * }
      * }
      */
+
+    /**
+     * 1
+     */
     public class Solution {
+
+        //快慢指针，快的一定会追上慢的
         public boolean hasCycle(ListNode head) {
             if (head == null || head.next == null) return false;
             ListNode slow = head;

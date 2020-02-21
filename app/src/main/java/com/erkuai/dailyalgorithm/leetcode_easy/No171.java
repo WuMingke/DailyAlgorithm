@@ -37,13 +37,15 @@ public class No171 {
 //特别感谢 @ts 添加此问题并创建所有测试用例。
 // Related Topics 数学
 
+    /**
+     * 1
+     */
 
-
-    //leetcode submit region begin(Prohibit modification and deletion)
+    //与No168相似
     class Solution {
         public int titleToNumber(String s) {
             int ans = 0;
-            for(int i=0;i<s.length();i++) {
+            for (int i = 0; i < s.length(); i++) {
                 int num = s.charAt(i) - 'A' + 1;
                 ans = ans * 26 + num;
             }
