@@ -25,8 +25,13 @@ public class No118 {
 // Related Topics 数组
 
 
+    /**
+     * 1
+     */
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
+
+        //打印杨辉三角的前numRows行，index从1开始
         public List<List<Integer>> generate(int numRows) {
             List<List<Integer>> triangle = new ArrayList<>();
             if (numRows == 0) return triangle;

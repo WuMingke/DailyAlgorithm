@@ -35,6 +35,10 @@ public class No111 {
      *     TreeNode(int x) { val = x; }
      * }
      */
+
+    /**
+     * 1
+     */
     class Solution {
         public int minDepth(TreeNode root) {
             if (root == null) {

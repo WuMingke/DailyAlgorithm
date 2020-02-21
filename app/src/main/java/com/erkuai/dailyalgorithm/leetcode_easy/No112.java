@@ -35,10 +35,15 @@ public class No112 {
      * TreeNode(int x) { val = x; }
      * }
      */
+
+    /**
+     * 1
+     */
     class Solution {
         public boolean hasPathSum(TreeNode root, int sum) {
             if (root == null) return false;
             sum = sum - root.val;
+            //要到叶子结点，最后如果有的话，sum减掉为0
             if ((root.left == null) && (root.right == null)) return (sum == 0);
             return hasPathSum(root.left, sum) || hasPathSum(root.right, sum);
         }

@@ -24,9 +24,19 @@ public class No121 {
 //
 // Related Topics 数组 动态规划
 
+    /**
+     * 1
+     */
 
+    /**
+     * （1）如果当前价值小于股票最小值，更新股票最小值
+     * （2）否则即当前价值大于等于最小价值，
+     * 则用当前值减去股票最小值与利润最大值做比较，判断是否更新即可。
+     */
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
+
+        //是最小值就更新最小值，不是最小值就比较利润，更新利润
         public int maxProfit(int[] prices) {
             int minPrice = Integer.MAX_VALUE;
             int maxProfit = 0;

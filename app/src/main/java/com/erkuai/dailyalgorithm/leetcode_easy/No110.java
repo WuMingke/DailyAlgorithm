@@ -52,6 +52,10 @@ public class No110 {
      *     TreeNode(int x) { val = x; }
      * }
      */
+
+    /**
+     * 1
+     */
     class Solution {
         public boolean isBalanced(TreeNode root) {
             return getTreeDepth(root) != -1;

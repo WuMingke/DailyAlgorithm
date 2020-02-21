@@ -22,11 +22,15 @@ public class No119 {
 // 你可以优化你的算法到 O(k) 空间复杂度吗？
 // Related Topics 数组
 
+    /**
+     * 1
+     */
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public List<Integer> getRow(int rowIndex) {
 
+            //打印杨辉三角的第rowIndex行，index从0开始
             List<Integer> cur = new ArrayList<>();
             cur.add(1);
             for (int i = 1; i <= rowIndex; i++) {

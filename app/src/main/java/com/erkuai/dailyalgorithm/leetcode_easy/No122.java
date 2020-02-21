@@ -32,13 +32,16 @@ public class No122 {
 //解释: 在这种情况下, 没有交易完成, 所以最大利润为 0。
 // Related Topics 贪心算法 数组
 
+    /**
+     * 1
+     */
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int maxProfit(int[] prices) {
             int maxProfit = 0;
             for (int i = 1; i < prices.length; i++) {
-                if (prices[i] > prices[i - 1]) {//只关注增量
+                if (prices[i] > prices[i - 1]) {//｜｜｜只关注增量｜｜｜
                     maxProfit = maxProfit + prices[i] - prices[i - 1];
                 }
             }
