@@ -73,33 +73,44 @@ public class No443 {
 
 
     //leetcode submit region begin(Prohibit modification and deletion)
-//
-//    此题要求使用原地算法求解,即将压缩结果存在原chars[]数组中.
-//
-//    使用双指针即可求解此题.这里我们称由相同字符组成的字符串为相同字符序列.
-//
-//            指针t指示已压缩的结果的末尾,指针i指示未压缩字符串的开头.
-//
-//            遇到相同的字符,指针i便向后滑动,直到遇到不同字符.指针i滑动的距离即为相同字符序列的长度.
+
+    /**
+     * 利用滑动窗口法，左右指针起点都为原数组的首位。
+     * 实现步骤如下：
+     * <p>
+     * 不断右移右指针，使窗口不断增大；
+     * 当窗口内出现一个不同的元素时，就可以将元素及其数量（等于左右指针之差）更新在数组中，然后让左指针指向右指针；
+     * 遍历到最后一个字符时也需要结算，因此将右指针的终点设为数组之外一格。当右指针移到终点时也要更新数组。
+     */
+
+    /**
+     * 1
+     */
 
     class Solution {
-        public int compress(char[] chars) {
-            int t=0;//设置指针
-            int i=0;
-            while (i <chars.length && t<chars.length) {//遍历字符串
-                chars[t++]=chars[i];//取相同字符序列的首字符存下
-                int temp=i;//记录相同字符序列首元素位置
-                while (i<chars.length &&chars[i]==chars[t-1])
-                    i++;//i指针滑动到相同字符序列末尾的下一个位置
-                if(i-temp>1){//若相同字符序列长度大于1
-                    for(char c:String.valueOf(i-temp).toCharArray()){//向结果中加入相同字符序列的长度的字符形式
-                        chars[t++]=c;
+        public int compress(char[] chars) {     // 数组大小范围： 1 <= chars.length <= 1000
+            int left = 0;
+            int size = 0;
+
+            // 由于最后一个字符也需要判断，所以将右指针终点放到数组之外一格
+            for (int right = 0; right <= chars.length; right++) {
+                // 当遍历完成，或右指针元素不等于左指针元素时，更新数组
+                if (right == chars.length || chars[right] != chars[left]) {
+                    // 更新字符
+                    chars[size++] = chars[left];
+                    // 更新计数，当个数大于 1 时才更新
+                    if (right - left > 1) {
+                        for (char c : String.valueOf(right - left).toCharArray()) {
+                            chars[size++] = c;
+                        }
                     }
+                    left = right;
                 }
             }
-            return t;//t即为已压缩的结果的长度
 
+            return size;
         }
+
     }
 //leetcode submit region end(Prohibit modification and deletion)
 
