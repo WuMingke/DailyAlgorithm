@@ -26,11 +26,17 @@ public class No387 {
 // Related Topics 哈希表 字符串
 
 
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 跟生成26个字母的数组然后计数的逻辑差不多
+     */
+
+    /**
+     * 1
+     */
     class Solution {
         @RequiresApi(api = Build.VERSION_CODES.N)
         public int firstUniqChar(String s) {
-            HashMap<Character, Integer> count = new HashMap<Character, Integer>();
+            HashMap<Character, Integer> count = new HashMap<>();
             int n = s.length();
             // build hash map : character and how often it appears
             for (int i = 0; i < n; i++) {

@@ -49,6 +49,14 @@ public class No414 {
 //    维护一个只有3个元素的TreeSet，如果大于三个元素就就把Set中的最小最小值remove掉。
 //    最后如果Set中元素小于3就返回Set最大值，否则返回最小值。
 
+    /**
+     * TreeSet是有序Set
+     */
+
+    /**
+     * 1
+     */
+
     class Solution {
         public int thirdMax(int[] nums) {
             TreeSet<Integer> set = new TreeSet<>();

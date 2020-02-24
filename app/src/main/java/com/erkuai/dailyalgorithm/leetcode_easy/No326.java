@@ -29,8 +29,14 @@ public class No326 {
 //你能不使用循环或者递归来完成本题吗？
 // Related Topics 数学
 
+    /**
+     * 不断除以3
+     */
 
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
+
     class Solution {
         public boolean isPowerOfThree(int n) {
             if (n < 1) return false;

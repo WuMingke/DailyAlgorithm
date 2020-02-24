@@ -33,6 +33,9 @@ public class No371 {
 //    继续重复上述两步：1000^100 = 1100，进位值为0，跳出循环，1100为最终结果。
 //    结束条件：进位为0，即a为最终的求和结果。
 
+    /**
+     * 1
+     */
     class Solution {
         public int getSum(int a, int b) {
             while (b != 0) {

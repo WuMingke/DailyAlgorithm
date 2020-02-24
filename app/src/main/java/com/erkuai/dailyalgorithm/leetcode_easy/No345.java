@@ -23,8 +23,9 @@ public class No345 {
 //元音字母不包含字母"y"。
 // Related Topics 双指针 字符串
 
-
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
     class Solution {
         //双指针，是元音，就停下来等待交换
         private HashSet<Character> vowels = new HashSet<>(

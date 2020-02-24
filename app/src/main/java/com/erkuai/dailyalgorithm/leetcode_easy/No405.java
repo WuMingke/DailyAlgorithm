@@ -34,11 +34,28 @@ public class No405 {
 //
 // Related Topics 位运算
 
-
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
     class Solution {
         public String toHex(int num) {
-            return Integer.toHexString(num);
+            //return Integer.toHexString(num);
+
+            char[] hex = "0123456789abcdef".toCharArray();
+
+            String s = "";
+            while (num != 0) {
+                int end = num & 15;
+                s = hex[end] + s;
+                //无符号右移
+                num >>>= 4;
+            }
+            if (s.length() == 0) {
+                s = "0";
+            }
+
+            return s;
+
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)

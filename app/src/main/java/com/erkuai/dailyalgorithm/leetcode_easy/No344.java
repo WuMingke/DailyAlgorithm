@@ -22,17 +22,21 @@ public class No344 {
 //输出：["h","a","n","n","a","H"]
 // Related Topics 双指针 字符串
 
-
+    /**
+     * 1
+     */
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public void reverseString(char[] s) {
             if (s == null || s.length < 2) return;
-            int left = -1;
-            int right = s.length;
-            while (++left < --right) {
+            int left = 0;
+            int right = s.length - 1;
+            while (left < right) {
                 char c = s[left];
                 s[left] = s[right];
                 s[right] = c;
+                left++;
+                right--;
             }
         }
     }

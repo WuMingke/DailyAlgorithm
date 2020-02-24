@@ -19,7 +19,9 @@ public class No367 {
 // Related Topics 数学 二分查找
 
 
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
     class Solution {
 
         //1 + 3 + 5 + ... + (2n - 1) = n ^ 2

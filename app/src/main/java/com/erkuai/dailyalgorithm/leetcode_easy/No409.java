@@ -33,18 +33,21 @@ public class No409 {
 //
 // Related Topics 哈希表
 
+    /**
+     * 1
+     */
 
     //leetcode submit region begin(Prohibit modification and deletion)
     static class Solution {
         public static int longestPalindrome(String s) {
-            int[] count = new int[128];
-            for (char c : s.toCharArray()) {
-                count[c]++;
+            int[] count = new int[58];
+            for (char c : s.toCharArray()) {//计算个数
+                count[c - 'A']++;
             }
             int ans = 0;
             for (int v : count) {
                 ans += v / 2 * 2;
-                if (v % 2 == 1 && ans % 2 == 0) {
+                if (v % 2 == 1 && ans % 2 == 0) {//判断是不是回文中心
                     ans++;
                 }
             }

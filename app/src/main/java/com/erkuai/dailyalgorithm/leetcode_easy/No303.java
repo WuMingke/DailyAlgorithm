@@ -20,10 +20,15 @@ public class No303 {
 //
 // Related Topics 动态规划
 
+    /**
+     * 用一个数组存储前n项的和，然后在最终计算的时候，减掉就行了。
+     */
 
+    /**
+     * 1
+     */
 
-    //leetcode submit region begin(Prohibit modification and deletion)
-    class NumArray {
+    static class NumArray {
 
         private int[] sum;
 
@@ -37,6 +42,14 @@ public class No303 {
         public int sumRange(int i, int j) {
             return sum[j + 1] - sum[i];
         }
+    }
+
+    public static void main(String[] args) {
+        int[] ints = {-2, 0, 3, -5, 2, -1};
+        NumArray array = new NumArray(ints);
+
+        System.out.println(array.sumRange(0,2));
+
     }
 
 /**

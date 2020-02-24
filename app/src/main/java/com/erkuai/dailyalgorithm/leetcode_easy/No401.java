@@ -6,8 +6,9 @@ import java.util.List;
 public class No401 {
 
     public static void main(String[] args) {
-        List<String> strings = Solution.readBinaryWatch(8);
+        List<String> strings = Solution.readBinaryWatch(5);
         System.out.println(strings);
+        System.out.println(Integer.bitCount(3));
     }
 
     //二进制手表顶部有 4 个 LED 代表小时（0-11），底部的 6 个 LED 代表分钟（0-59）。
@@ -37,11 +38,16 @@ public class No401 {
 //
 // Related Topics 位运算 回溯算法
 
+    /**
+     * 1
+     */
 
-    //leetcode submit region begin(Prohibit modification and deletion)
     static class Solution {
 
-        // //要计算所有的可能性,可以将小时和分钟的所有可能做循环,然后将当前点数的二进制值相加看有几个1,如果符合num,则对应输出时间
+       //要计算所有的可能性,可以将小时和分钟的所有可能做循环,
+        // 然后将当前点数的二进制值相加看有几个1,如果符合num,则对应输出时间
+
+        //要看图，灯亮表示1，灯灭表示0，计算灯的数量和，就可以了。
 
         public static List<String> readBinaryWatch(int num) {
             ArrayList<String> list = new ArrayList<>();

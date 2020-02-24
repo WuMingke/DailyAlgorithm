@@ -27,19 +27,23 @@ public class No392 {
 // 特别感谢 @pbrother 添加此问题并且创建所有测试用例。
 // Related Topics 贪心算法 二分查找 动态规划
 
-
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
     class Solution {
 
-        //定义一个index变量表示找到s字符串变量中第index个字符，i变量是表示从t中的哪一个索引开始找
-
+        //indexOf(char c,int m)意思是从第m位置开始寻找该索引，找到则返回该索引，否则返回-1
         public boolean isSubsequence(String s, String t) {
-            int index = 0, i = 0;
-            while (index < s.length() && t.indexOf(s.charAt(index), i) >= i) {
-                i = t.indexOf(s.charAt(index), i) + 1;
-                index++;
+            char[] arr = s.toCharArray();
+            int j = -1;
+            for (int i = 0; i < arr.length; i++) {
+                j = t.indexOf(arr[i], j + 1);
+                if (j == -1) {
+                    return false;
+                }
             }
-            return index == s.length();
+            return true;
+
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)

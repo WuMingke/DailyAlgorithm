@@ -12,13 +12,17 @@ public class No434 {
 //
 // 示例:
 //
-// 输入: "Hello, my name is John"
+// 输入: "Hello, my name is John"  /* my 前面是有空格的 */
 //输出: 5
 //
 // Related Topics 字符串
 
+    //若该下标前为空格（或者为初始下标），且自身不为空格，则其为单词开始的下标。
 
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
+
     class Solution {
         public int countSegments(String s) {
             int count = 0;

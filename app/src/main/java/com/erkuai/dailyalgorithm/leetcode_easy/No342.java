@@ -19,12 +19,16 @@ public class No342 {
 //你能不使用循环或者递归来完成本题吗？
 // Related Topics 位运算
 
+    /**
+     * 同No326
+     */
 
-
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
     class Solution {
         public boolean isPowerOfFour(int num) {
-            while ( (num != 0)  && (num % 4 == 0)) {
+            while ((num != 0) && (num % 4 == 0)) {
                 num /= 4;
             }
             return num == 1;

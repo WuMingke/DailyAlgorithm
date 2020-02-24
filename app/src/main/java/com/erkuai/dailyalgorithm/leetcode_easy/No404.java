@@ -32,6 +32,10 @@ public class No404 {
      * TreeNode(int x) { val = x; }
      * }
      */
+
+    /**
+     * 1
+     */
     class Solution {
         int res = 0;//存储结果
 
@@ -44,7 +48,7 @@ public class No404 {
 
         public void getSum(TreeNode root) {
             if (root.left != null) {//root.left不能为空
-                //root.left为左叶子
+                //root.left为左叶子  要是叶子结点
                 if (root.left.left == null && root.left.right == null)
                     res += root.left.val;//结果增加
                 else//否则继续递归
