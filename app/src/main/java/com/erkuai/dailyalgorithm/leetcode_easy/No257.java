@@ -38,6 +38,10 @@ public class No257 {
      * TreeNode(int x) { val = x; }
      * }
      */
+
+    /**
+     * 1
+     */
     class Solution {
         public List<String> binaryTreePaths(TreeNode root) {
             LinkedList<String> paths = new LinkedList<>();

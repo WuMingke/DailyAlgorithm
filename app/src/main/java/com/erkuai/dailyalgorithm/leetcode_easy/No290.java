@@ -32,9 +32,21 @@ public class No290 {
 
 
     //leetcode submit region begin(Prohibit modification and deletion)
+
+    /**
+     * 1.第一步： pattern = "abba" = "1221"
+     * 2.第二步： strs = "dog cat cat dog" = "1221"
+     * 3.第三步： "1221" ?= "1221"
+     *
+     * 判断首次出现的index
+     */
+
+    /**
+     * 1
+     */
     class Solution {
         public boolean wordPattern(String pattern, String str) {
-            String[] strs = str.split(" ");
+            String[] strs= str.split(" ");
             if (strs.length != pattern.length()) return false;
             for (int i = 0; i < pattern.length(); i++) {
                 if (pattern.indexOf(pattern.charAt(i))

@@ -49,6 +49,10 @@ public class No237 {
      * ListNode(int x) { val = x; }
      * }
      */
+
+    /**
+     * 1
+     */
     class Solution {
         public void deleteNode(ListNode node) {
             node.val = node.next.val;

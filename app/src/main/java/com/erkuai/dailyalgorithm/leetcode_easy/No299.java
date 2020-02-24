@@ -30,10 +30,19 @@ public class No299 {
 // 说明: 你可以假设秘密数字和朋友的猜测数都只包含数字，并且它们的长度永远相等。
 // Related Topics 哈希表
 
+    /**
+     * 用一个数组来存不对位的数字出现的次数
+     * 0 1 2 3 4 5 6 7 8 9
+     *   1   1     1
+     */
 
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
+
     class Solution {
         public String getHint(String secret, String guess) {
+            //只存在数字0-9
             int[] secretMap = new int[10];
             int countA = 0, countB = 0;
             for (int i = 0; i < secret.length(); i++) {
@@ -54,6 +63,10 @@ public class No299 {
             return countA + "A" + countB + "B";
 
         }
+    }
+
+    public static void main(String[] args) {
+        System.out.println(('7' - '0'));
     }
 //leetcode submit region end(Prohibit modification and deletion)
 

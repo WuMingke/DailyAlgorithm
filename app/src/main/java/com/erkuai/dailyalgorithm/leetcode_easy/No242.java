@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class No242 {
 
     //给定两个字符串 s 和 t ，编写一个函数来判断 t 是否是 s 的字母异位词。
+    //通过将 s 的字母重新排列成 t 来生成变位词。
 //
 // 示例 1:
 //
@@ -24,11 +25,13 @@ public class No242 {
 //如果输入字符串包含 unicode 字符怎么办？你能否调整你的解法来应对这种情况？
 // Related Topics 排序 哈希表
 
+    /**
+     * 1
+     */
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public boolean isAnagram(String s, String t) {
-            if (s.length() != t.length()) return false;
             char[] CharS = s.toCharArray();
             char[] CharT = t.toCharArray();
             Arrays.sort(CharS);

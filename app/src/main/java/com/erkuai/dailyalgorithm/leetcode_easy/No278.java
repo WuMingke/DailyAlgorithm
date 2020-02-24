@@ -24,6 +24,11 @@ public class No278 {
 /* The isBadVersion API is defined in the parent class VersionControl.
       boolean isBadVersion(int version); */
 
+    /**
+     * 1
+     * 二分查找
+     */
+
     public class Solution extends VersionControl {
         public int firstBadVersion(int n) {
             int left = 1;

@@ -16,8 +16,12 @@ public class No292 {
 // Related Topics 脑筋急转弯 极小化极大
 
 
+    //要想获胜，在你的回合中，必须避免石头堆中的石子数为 4 的情况。
 
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
+
     class Solution {
         public boolean canWinNim(int n) {
             return (n % 4 != 0);

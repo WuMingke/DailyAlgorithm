@@ -22,14 +22,18 @@ public class No268 {
 //你的算法应具有线性时间复杂度。你能否仅使用额外常数空间来实现?
 // Related Topics 位运算 数组 数学
 
+    /**
+     * 1
+     */
 
-    //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int missingNumber(int[] nums) {
             Arrays.sort(nums);
 
+            //这里0～n，1个数，就是0～1，就是要两个数，所以直接for循环有问题。
+
             // 判断 n 是否出现在末位
-            if (nums[nums.length-1] != nums.length) {
+            if (nums[nums.length - 1] != nums.length) {
                 return nums.length;
             }
             // 判断 0 是否出现在首位
@@ -39,7 +43,7 @@ public class No268 {
 
             // 此时缺失的数字一定在 (0, n) 中
             for (int i = 1; i < nums.length; i++) {
-                int expectedNum = nums[i-1] + 1;
+                int expectedNum = nums[i - 1] + 1;
                 if (nums[i] != expectedNum) {
                     return expectedNum;
                 }
@@ -47,6 +51,8 @@ public class No268 {
 
             // 未缺失任何数字（保证函数有返回值）
             return -1;
+
+
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)

@@ -19,10 +19,14 @@ public class No283 {
 //
 // Related Topics 数组 双指针
 
+    /**
+     * 1
+     */
 
-    //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public void moveZeroes(int[] nums) {
+
+            //j指向0，遇到不是0的，就和它交换，使得数字向前
             int j = -1;
             for (int i = 0; i < nums.length; i++) {
                 if (nums[i] != 0) {

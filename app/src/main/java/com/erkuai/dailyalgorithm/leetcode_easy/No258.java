@@ -22,6 +22,11 @@ public class No258 {
 //    当数字大于9，且为9的倍数时，结果为9，
 //    当数字大于9，且不为9的倍数时，结果为该数mod 9 的余数
 //
+
+    /**
+     * 1
+     */
+
     class Solution {
         public int addDigits(int num) {
             if (num <= 9) {
