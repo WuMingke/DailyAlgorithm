@@ -84,10 +84,10 @@ public class No443 {
      */
 
     /**
-     * 1
+     * 不懂?
      */
 
-    class Solution {
+    static class Solution {
         public int compress(char[] chars) {     // 数组大小范围： 1 <= chars.length <= 1000
             int left = 0;
             int size = 0;
@@ -111,6 +111,11 @@ public class No443 {
             return size;
         }
 
+    }
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        System.out.println(solution.compress(new char[]{'a', 'a', 'b', 'b', 'b'}));
     }
 //leetcode submit region end(Prohibit modification and deletion)
 

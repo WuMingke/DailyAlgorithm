@@ -23,7 +23,9 @@ public class No453 {
 // Related Topics 数学
 
 
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 不懂？
+     */
     class Solution {
         public int minMoves(int[] nums) {
             Arrays.sort(nums);

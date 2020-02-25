@@ -2,6 +2,8 @@ package com.erkuai.dailyalgorithm.leetcode_easy;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -12,8 +14,12 @@ public class No448 {
 
     public static void main(String args[]) {
         List<Integer> list =
-                Solution.findDisappearedNumbers(new int[]{4, 3, 2, 7, 8, 2, 3, 1});
-       // System.out.println(list.toString());
+                Solution.findDisappearedNumbers(new int[]{3, 3, 2, 1, 4, 5, 6, 4});
+
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println(list.get(i));
+        }
+        // System.out.println(list.toString());
     }
 
     //给定一个范围在 1 ≤ a[i] ≤ n ( n = 数组大小 ) 的 整型数组，数组中的元素一些出现了两次，
@@ -34,26 +40,30 @@ public class No448 {
 //
 // Related Topics 数组
 
+    /**
+     * 1
+     */
 
-    //leetcode submit region begin(Prohibit modification and deletion)
+    //数组里的值是连续的
+
     static class Solution {
         public static List<Integer> findDisappearedNumbers(int[] nums) {
-            List<Integer> res = new ArrayList<Integer>();
-            int n = nums.length;
-            //第一轮，将所有出现过的值对应的位置变为负数
-            for(int i=0;i<n;i++){
-                int index = Math.abs(nums[i]) - 1;
-                nums[index] = Math.abs(nums[index]) * -1;
+
+            HashMap<Integer, Boolean> hashTable = new HashMap<>();
+            for (int i = 0; i < nums.length; i++) {
+                hashTable.put(nums[i], true);
+            }
+            List<Integer> result = new LinkedList<>();
+
+            for (int i = 1; i <= nums.length; i++) {
+                if (!hashTable.containsKey(i)) {
+                    result.add(i);
+                }
             }
 
-            //第二轮，统计不为负数的（就是没出现过的）
-            for(int i=0;i<n;i++){
-                if(nums[i] > 0)
-                    res.add(i+1);
-            }
-            return res;
+            return result;
+
         }
     }
-//leetcode submit region end(Prohibit modification and deletion)
 
 }
