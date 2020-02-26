@@ -33,8 +33,15 @@ public class No459 {
 //
 // Related Topics 字符串
 
+    /**
+     * 1.将原字符串给出拷贝一遍组成新字符串；
+     * 2.掐头去尾留中间；
+     * 3.如果还包含原字符串，则满足题意。
+     */
 
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
     class Solution {
         public boolean repeatedSubstringPattern(String s) {
             String str = s + s;

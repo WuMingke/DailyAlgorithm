@@ -31,13 +31,15 @@ public class No520 {
 // 注意: 输入是由大写和小写拉丁字母组成的非空单词。
 // Related Topics 字符串
 
-
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
     class Solution {
         public boolean detectCapitalUse(String word) {
             return word.equals(word.toLowerCase()) ||
                     word.equals(word.toUpperCase()) ||
-                    word.equals(Character.toUpperCase(word.charAt(0)) + word.substring(1).toLowerCase());
+                    word.equals(Character.toUpperCase(word.charAt(0))
+                            + word.substring(1).toLowerCase());
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)

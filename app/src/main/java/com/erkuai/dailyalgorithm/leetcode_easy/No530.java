@@ -39,6 +39,10 @@ public class No530 {
      * TreeNode(int x) { val = x; }
      * }
      */
+
+    /**
+     * 1
+     */
     class Solution {
 
         TreeNode pre;

@@ -20,8 +20,9 @@ public class No541 {
 //
 // Related Topics 字符串
 
-
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
     class Solution {
         public String reverseStr(String s, int k) {
             char[] s_arr = s.toCharArray();

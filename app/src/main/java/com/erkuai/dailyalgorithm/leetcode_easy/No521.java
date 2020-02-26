@@ -22,8 +22,9 @@ public class No521 {
 //
 // Related Topics 字符串
 
-
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
     class Solution {
         public int findLUSlength(String a, String b) {
             if (a.equals(b)) return -1;

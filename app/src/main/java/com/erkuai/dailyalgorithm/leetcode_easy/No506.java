@@ -28,6 +28,9 @@ public class No506 {
 //
 //
 
+    /**
+     * 1
+     */
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {

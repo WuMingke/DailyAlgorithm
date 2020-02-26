@@ -46,8 +46,9 @@ public class No532 {
 //
 // Related Topics 数组 双指针
 
-
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
     class Solution {
         public int findPairs(int[] nums, int k) {
             if (k < 0) return 0;

@@ -34,6 +34,10 @@ public class No543 {
      * TreeNode(int x) { val = x; }
      * }
      */
+
+    /**
+     * 1
+     */
     class Solution {
 
         private int max = 0;

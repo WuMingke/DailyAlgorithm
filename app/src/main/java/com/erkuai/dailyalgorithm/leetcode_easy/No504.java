@@ -21,6 +21,10 @@ public class No504 {
 // 注意: 输入范围是 [-1e7, 1e7] 。
 //
 
+    /**
+     * 1
+     */
+
 
     //leetcode submit region begin(Prohibit modification and deletion)
     static class Solution {

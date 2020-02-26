@@ -24,8 +24,10 @@ public class No561 {
 //
 // Related Topics 数组
 
+    /**
+     * 1
+     */
 
-    //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int arrayPairSum(int[] nums) {
             Arrays.sort(nums);

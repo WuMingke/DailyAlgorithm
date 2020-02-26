@@ -31,12 +31,14 @@ public class No492 {
 //
 //
 
+    /**
+     * 1
+     */
 
-    //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int[] constructRectangle(int area) {
             int sqrt = (int) Math.sqrt(area);
-            while (area % sqrt != 0) {
+            while (area % sqrt != 0) {//找到可以整除的那个数
                 sqrt--;
             }
 

@@ -40,8 +40,9 @@ public class No482 {
 //
 //
 
-
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
     class Solution {
         public String licenseKeyFormatting(String S, int K) {
             char[] chars = S.toCharArray();

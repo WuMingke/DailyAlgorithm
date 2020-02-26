@@ -23,7 +23,9 @@ public class No507 {
 // Related Topics 数学
 
 
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 不懂？
+     */
     class Solution {
         public boolean checkPerfectNumber(int num) {
             if (num <= 0) return false;

@@ -10,7 +10,7 @@ public class No463 {
 //
 //
 //
-// 示例 :
+// 示例 : 求1的周长
 //
 // 输入:
 //[[0,1,0,0],
@@ -27,9 +27,11 @@ public class No463 {
 // Related Topics 哈希表
 
 
-    //leetcode submit region begin(Prohibit modification and deletion)
-
     // 周长 = 个数*4-重合边*2；
+
+    /**
+     * 1
+     */
     class Solution {
         public int islandPerimeter(int[][] grid) {
             int count = 0;
@@ -47,7 +49,6 @@ public class No463 {
                         if (j > 0 && grid[i][j - 1] == 1) {
                             count = count - 2;
                         }
-
                     }
                 }
             }

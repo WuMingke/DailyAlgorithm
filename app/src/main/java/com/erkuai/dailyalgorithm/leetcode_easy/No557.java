@@ -16,7 +16,9 @@ public class No557 {
 // Related Topics 字符串
 
 
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
     static class Solution {
         public String reverseWords(String s) {
             String[] strings = s.split(" ");

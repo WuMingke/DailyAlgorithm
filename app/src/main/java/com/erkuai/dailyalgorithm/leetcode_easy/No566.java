@@ -49,8 +49,16 @@ public class No566 {
 //
 // Related Topics 数组
 
+    /**
+     * 通过以行方式读取元素来提取给定矩阵的所有元素。在此实现中，我们使用队列来放置提取的元素。然后，我们可以取出以串行顺序形成的队列元素，并再次按行逐行排列所得到的所需矩阵中的元素。
+     *
+     * 如果原始矩阵中的元素数量不等于所得矩阵中的元素数量，则不可能形成所得矩阵。
+     *
+     */
 
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
     class Solution {
         public int[][] matrixReshape(int[][] nums, int r, int c) {
             int[][] res = new int[r][c];

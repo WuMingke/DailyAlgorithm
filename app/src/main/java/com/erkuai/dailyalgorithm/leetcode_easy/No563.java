@@ -44,6 +44,10 @@ public class No563 {
      * TreeNode(int x) { val = x; }
      * }
      */
+
+    /**
+     * 递归还是不懂？
+     */
     class Solution {
 
         int tilt = 0;

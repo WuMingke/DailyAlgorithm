@@ -28,8 +28,9 @@ public class No500 {
 // 你可以假设输入的字符串将只包含字母。
 // Related Topics 哈希表
 
-
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
     class Solution {
         public String[] findWords(String[] words) {
             if (words == null) {
@@ -39,7 +40,7 @@ public class No500 {
             List<String> ans = new ArrayList<>();
 
             // 字典行
-            String lines[] = new String[]{
+            String[] lines = new String[]{
                     "qwertyuiop",
                     "asdfghjkl",
                     "zxcvbnm"

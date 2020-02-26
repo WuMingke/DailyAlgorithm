@@ -46,6 +46,10 @@ public class No501 {
      * TreeNode(int x) { val = x; }
      * }
      */
+
+    /**
+     * 不懂？
+     */
     class Solution {
 
         List<Integer> list = new ArrayList<>();

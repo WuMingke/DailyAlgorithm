@@ -25,8 +25,14 @@ public class No461 {
 //
 // Related Topics 位运算
 
+    /**
+     * 异或运算：相同的为0，不同的为1
+     * 将两个数做异或运算，然后计算1的个数即是答案。
+     */
 
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
     class Solution {
         public int hammingDistance(int x, int y) {
             return Integer.bitCount(x ^ y);

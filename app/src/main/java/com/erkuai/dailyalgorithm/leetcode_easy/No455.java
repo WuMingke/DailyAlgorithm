@@ -38,8 +38,10 @@ public class No455 {
 //
 // Related Topics 贪心算法
 
+    /**
+     * 1
+     */
 
-    //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int findContentChildren(int[] g, int[] s) {
             int ans = 0;
@@ -48,7 +50,7 @@ public class No455 {
             for (int i = 0, j = 0; i < g.length && j < s.length; j++) {
                 if (g[i] <= s[j]) {
                     ans++;
-                    i++;
+                    i++;//  满足了，孩子才加
                 }
             }
             return ans;

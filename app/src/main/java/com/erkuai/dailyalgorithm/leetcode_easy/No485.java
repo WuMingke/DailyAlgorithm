@@ -20,8 +20,9 @@ public class No485 {
 //
 // Related Topics 数组
 
-
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
     class Solution {
         public int findMaxConsecutiveOnes(int[] nums) {
             int ans = 0, count = 0;
@@ -29,12 +30,12 @@ public class No485 {
                 if (nums[i] == 1) {
                     count++;
                 } else {
-                    ans = ans > count ? ans : count;
+                    ans = Math.max(ans, count);
                     count = 0;
                 }
             }
 
-            return ans > count ? ans : count;
+            return Math.max(ans, count);//最后一个不知道是1还是非1，故再判断一次
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)

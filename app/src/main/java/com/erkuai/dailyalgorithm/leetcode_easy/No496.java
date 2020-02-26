@@ -37,8 +37,9 @@ public class No496 {
 //
 // Related Topics 栈
 
-
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
     class Solution {
         public int[] nextGreaterElement(int[] nums1, int[] nums2) {
             Stack<Integer> stack = new Stack<>();

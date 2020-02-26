@@ -34,6 +34,10 @@ public class No538 {
      * TreeNode(int x) { val = x; }
      * }
      */
+
+    /**
+     * 1
+     */
     class Solution {
 
         //降序排列所有节点，把和依次累加
