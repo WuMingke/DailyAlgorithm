@@ -23,8 +23,13 @@ public class No581 {
 //
 // Related Topics 数组
 
+    //比较 nums 和 clone 的元素来决定最左边和最右边不匹配的元素。
+    // 它们之间的子数组就是要求的最短无序子数组。
 
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
+
     class Solution {
         public int findUnsortedSubarray(int[] nums) {
             int[] clone = nums.clone();

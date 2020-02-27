@@ -21,8 +21,12 @@ public class No594 {
 // Related Topics 哈希表
 
 
+    /**
+     * 1
+     */
+
     //leetcode submit region begin(Prohibit modification and deletion)
-    class Solution {
+    static class Solution {
         public int findLHS(int[] nums) {
             int res = 0;
             for (int i = 0; i < nums.length; i++) {
@@ -41,6 +45,12 @@ public class No594 {
             }
             return res;
         }
+    }
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+
+        System.out.println(solution.findLHS(new int[]{2, 1, 1, 1}));
     }
 //leetcode submit region end(Prohibit modification and deletion)
 

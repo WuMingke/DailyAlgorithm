@@ -64,6 +64,10 @@ public class No572 {
      * TreeNode(int x) { val = x; }
      * }
      */
+
+    /**
+     * 1
+     */
     class Solution {
         public boolean isSubtree(TreeNode s, TreeNode t) {
             if (t == null) return true;
