@@ -23,8 +23,9 @@ public class No657 {
 //解释：机器人向左移动两次。它最终位于原点的左侧，距原点有两次 “移动” 的距离。我们返回 false，因为它在移动结束时没有返回原点。
 // Related Topics 字符串
 
-
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
     class Solution {
         public boolean judgeCircle(String moves) {
             int x = 0, y = 0;

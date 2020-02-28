@@ -57,6 +57,10 @@ public class No653 {
      * TreeNode(int x) { val = x; }
      * }
      */
+
+    /**
+     * 1
+     */
     class Solution {
         public boolean findTarget(TreeNode root, int k) {
             HashSet<Integer> set = new HashSet<>();

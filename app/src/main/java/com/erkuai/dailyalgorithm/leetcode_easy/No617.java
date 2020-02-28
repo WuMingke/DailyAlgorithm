@@ -42,6 +42,10 @@ public class No617 {
      * TreeNode(int x) { val = x; }
      * }
      */
+
+    /**
+     * 1
+     */
     class Solution {
         public TreeNode mergeTrees(TreeNode t1, TreeNode t2) {
 

@@ -1,5 +1,6 @@
 package com.erkuai.dailyalgorithm.leetcode_easy;
 
+import java.time.temporal.ValueRange;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -38,26 +39,40 @@ public class No599 {
 //
 // Related Topics 哈希表
 
-
+    /**
+     * 1
+     */
     //leetcode submit region begin(Prohibit modification and deletion)
-    class Solution {
+    static class Solution {
         public String[] findRestaurant(String[] list1, String[] list2) {
             HashMap<Integer, List<String>> map = new HashMap<>();
             for (int i = 0; i < list1.length; i++) {
                 for (int j = 0; j < list2.length; j++) {
                     if (list1[i].equals(list2[j])) {
-                        if (!map.containsKey(i + j))
+                        if (!map.containsKey(i + j)) {
                             map.put(i + j, new ArrayList<String>());
+                        }
                         map.get(i + j).add(list1[i]);
                     }
                 }
             }
             int min_index_sum = Integer.MAX_VALUE;
-            for (int key : map.keySet())
+            for (int key : map.keySet()) {
                 min_index_sum = Math.min(min_index_sum, key);
+            }
             String[] res = new String[map.get(min_index_sum).size()];
             return map.get(min_index_sum).toArray(res);
 
+        }
+    }
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        String[] restaurant = solution.findRestaurant(
+                new String[]{"Shogun", "Tapioca Express", "Burger King", "KFC"},
+                new String[]{"KFC", "Shogun", "Burger King"});
+        for (int i = 0; i < restaurant.length; i++) {
+            System.out.println(restaurant[i]);
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)

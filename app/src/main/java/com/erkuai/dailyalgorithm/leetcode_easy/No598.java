@@ -46,9 +46,19 @@ public class No598 {
 //
 // Related Topics 数学
 
+    /**
+     * int[][] ops 是去操作的数组
+     * op[0] 是数组的第一个值，op[1]是数组的第二个值
+     *
+     * 最大的值都在左上角的矩形区域
+     * 大小乘起来就可以了
+     */
 
-    //leetcode submit region begin(Prohibit modification and deletion)
-    class Solution {
+    /**
+     * 1
+     */
+
+    static class Solution {
         public int maxCount(int m, int n, int[][] ops) {
             for (int[] op : ops) {
                 m = Math.min(m, op[0]);
@@ -56,6 +66,13 @@ public class No598 {
             }
             return m * n;
         }
+
+    }
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        int i = solution.maxCount(3, 3, new int[][]{{1, 2}, {3, 4}});
+        System.out.println(i);
     }
 //leetcode submit region end(Prohibit modification and deletion)
 

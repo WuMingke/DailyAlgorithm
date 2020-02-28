@@ -29,11 +29,13 @@ public class No628 {
 //
 // Related Topics 数组 数学
 
-
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
     class Solution {
         public int maximumProduct(int[] nums) {
             Arrays.sort(nums);
+            //负数、正数
             return Math.max(nums[0] * nums[1] * nums[nums.length - 1],
                     nums[nums.length - 1] * nums[nums.length - 2] * nums[nums.length - 3]);
         }

@@ -20,8 +20,13 @@ public class No643 {
 //
 // Related Topics 数组
 
+    /**
+     * 滑动窗口
+     */
 
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
     class Solution {
         public double findMaxAverage(int[] nums, int k) {
             double sum = 0;

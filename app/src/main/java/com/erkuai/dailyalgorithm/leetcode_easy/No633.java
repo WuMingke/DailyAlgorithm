@@ -22,8 +22,9 @@ public class No633 {
 //
 // Related Topics 数学
 
-
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
     class Solution {
         public boolean judgeSquareSum(int c) {
             for (long a = 0; a * a <= c; a++) {
