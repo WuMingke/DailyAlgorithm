@@ -23,16 +23,22 @@ public class No674 {
 // 注意：数组长度不会超过10000。
 // Related Topics 数组
 
-
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
     class Solution {
         public int findLengthOfLCIS(int[] nums) {
-            int ans = 0, anchor = 0;
-            for (int i = 0; i < nums.length; i++) {
-                if (i > 0 && nums[i - 1] >= nums[i]) {
-                    anchor = i;
+            if (nums.length <= 1)
+                return nums.length;
+            int ans = 1;
+            int count = 1;
+            for (int i = 0; i < nums.length - 1; i++) {
+                if (nums[i + 1] > nums[i]) {
+                    count++;
+                } else {
+                    count = 1;
                 }
-                ans = Math.max(ans, i - anchor + 1);
+                ans = count > ans ? count : ans;
             }
             return ans;
 

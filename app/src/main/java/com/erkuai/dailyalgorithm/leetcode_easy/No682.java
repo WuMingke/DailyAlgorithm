@@ -49,8 +49,9 @@ public class No682 {
 //
 // Related Topics 栈
 
-
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
     class Solution {
         public int calPoints(String[] ops) {
             Stack<Integer> stack = new Stack<>();

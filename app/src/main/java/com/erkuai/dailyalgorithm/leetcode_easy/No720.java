@@ -41,28 +41,35 @@ public class No720 {
 //
 // Related Topics 字典树 哈希表
 
-
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
     class Solution {
         public String longestWord(String[] words) {
             Set<String> wordset = new HashSet();
-            for (String word : words) wordset.add(word);
+            for (String word : words) {
+                wordset.add(word);
+            }
             Arrays.sort(words, new Comparator<String>() {
                 @Override
                 public int compare(String a, String b) {
+                    //正数需要交换位置，负数不需要交换顺序
+                    //相等的话，升序；不等的话，降序
                     return a.length() == b.length()
                             ? a.compareTo(b) : b.length() - a.length();
                 }
             });
             for (String word : words) {
                 boolean good = true;
-                for (int k = 1; k < word.length(); ++k) {
+                for (int k = 1; k < word.length(); k++) {
                     if (!wordset.contains(word.substring(0, k))) {
                         good = false;
                         break;
                     }
                 }
-                if (good) return word;
+                if (good) {
+                    return word;
+                }
             }
 
             return "";
@@ -70,5 +77,21 @@ public class No720 {
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
+
+    public static void main(String[] args) {
+        String[] words = {"a", "banana", "app", "appl", "ap", "apply", "apple"};
+        Arrays.sort(words, new Comparator<String>() {
+            @Override
+            public int compare(String a, String b) {
+
+                return a.length() == b.length()
+                        ? a.compareTo(b) : b.length() - a.length();
+            }
+        });
+
+        for (int i = 0; i < words.length; i++) {
+            System.out.println(words[i]);
+        }
+    }
 
 }

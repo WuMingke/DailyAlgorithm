@@ -60,6 +60,10 @@ public class No669 {
      * TreeNode(int x) { val = x; }
      * }
      */
+
+    /**
+     * 1
+     */
     class Solution {
         public TreeNode trimBST(TreeNode root, int L, int R) {
             if (root == null) return root;

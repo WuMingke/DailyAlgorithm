@@ -58,6 +58,10 @@ public class No687 {
      * TreeNode(int x) { val = x; }
      * }
      */
+
+    /**
+     * 不懂？
+     */
     class Solution {
 
         int ans = 0;

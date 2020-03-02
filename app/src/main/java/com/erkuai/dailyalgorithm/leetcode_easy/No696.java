@@ -33,8 +33,25 @@ public class No696 {
 //
 // Related Topics 字符串
 
+    /**
+     * 对于 '0' * k + '1' * k 或 '1' * k + '0' * k 形式的每个二进制字符串，
+     * 此字符串的中间部分必须出现在两个组之间。
+     *
+     * 让我们尝试计算 groups[i] 和 groups[i+1] 之间的有效二进制字符串数。
+     * 如果我们有 groups[i] = 2, groups[i+1] = 3，那么它表示 “00111” 或 “11000”。
+     * 显然，我们可以在此字符串中生成 min(groups[i], groups[i+1]) 有效的二进制字符串。
+     *
+     *
+     * 让我们创建上面定义的 groups。s 的第一个元素属于它自己的组。
+     * 每个元素要么与前一个元素不匹配，从而开始一个大小为 1 的新组；
+     * 要么匹配，从而使最近一个组的大小增加 1。
+     * 然后，我们将取 min(groups[i-1], groups[i]) 的和。
+     *
+     */
 
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
     class Solution {
         public int countBinarySubstrings(String s) {
             int[] groups = new int[s.length()];

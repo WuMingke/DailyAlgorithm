@@ -41,8 +41,9 @@ public class No693 {
 //
 // Related Topics 位运算
 
-
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
     class Solution {
         public boolean hasAlternatingBits(int n) {
             String s = Integer.toBinaryString(n);

@@ -19,6 +19,9 @@ import com.erkuai.dailyalgorithm.algorithm.FindNumber;
 import com.erkuai.dailyalgorithm.algorithm.PrintListReversing;
 import com.erkuai.dailyalgorithm.algorithm.ReplaceBlank;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.LinkedHashMap;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
@@ -162,5 +165,7 @@ public class TestActivity extends AppCompatActivity {
 
     public void showAnotherActivity(View view) {
         startActivity(new Intent(this, Test2Activity.class));
+
+
     }
 }

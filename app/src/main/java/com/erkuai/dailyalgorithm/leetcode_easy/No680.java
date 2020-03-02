@@ -26,8 +26,15 @@ public class No680 {
 //
 // Related Topics 字符串
 
+    /**
+     * 使用双指针可以很容易判断一个字符串是否是回文字符串：
+     * 令一个指针从左到右遍历，一个指针从右到左遍历，这两个指针同时移动一个位置，
+     * 每次都判断两个指针指向的字符是否相同，如果都相同，字符串才是具有左右对称性质的回文字符串。
+     */
 
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
     class Solution {
 
         //双指针

@@ -25,8 +25,9 @@ public class No703 {
 //你可以假设 nums 的长度≥ k-1 且k ≥ 1。
 // Related Topics 堆
 
-
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
     class KthLargest {
 
         private PriorityQueue<Integer> queue;
@@ -44,7 +45,7 @@ public class No703 {
             if (queue.size() < limit) {
                 queue.add(val);
             } else if (val > queue.peek()) {
-                queue.poll();
+                queue.poll();//获取并删除队首元素
                 queue.add(val);
             }
 

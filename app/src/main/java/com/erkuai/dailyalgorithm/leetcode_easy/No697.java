@@ -50,10 +50,15 @@ public class No697 {
 对于给定数组中的每个元素，让我们知道 left 是它第一次出现的索引； right 是它最后一次出现的索引。例如，当 nums = [1,2,3,2,5] 时，left[2] = 1 和 right[2] = 3。
 然后，对于出现次数最多的每个元素 x，right[x] - left[x] + 1 将是我们的候选答案，我们将取这些候选的最小值。
     * */
+
+    /**
+     * 不懂？
+     */
     class Solution {
         public int findShortestSubArray(int[] nums) {
-            Map<Integer, Integer> left = new HashMap(),
-                    right = new HashMap(), count = new HashMap();
+            Map<Integer, Integer> left = new HashMap();
+            Map<Integer, Integer> right = new HashMap();
+            Map<Integer, Integer> count = new HashMap();
 
             for (int i = 0; i < nums.length; i++) {
                 int x = nums[i];

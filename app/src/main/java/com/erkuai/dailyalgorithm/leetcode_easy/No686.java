@@ -13,20 +13,29 @@ public class No686 {
 // A 与 B 字符串的长度在1和10000区间范围内。
 // Related Topics 字符串
 
+    //如果A已经遍历完所有的字符下标，B还不是A的子字符串，那么B永远就不是了
 
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
     class Solution {
         public int repeatedStringMatch(String A, String B) {
-            int loop = B.length() / A.length() + 1;
-            String temp = A;
-            int i = 0;
-            for (; i < loop; i++) {
-                if (A.contains(B)) return i + 1;
-                A += temp;
+            StringBuilder sb = new StringBuilder(A);
+            int count = 1;
+            while (sb.length() < B.length()) {
+                sb.append(A);
+                count++;
             }
-            return A.contains(B) ? i + 1 : -1;
+            if (sb.indexOf(B) >= 0) {
+                return count;
+            }
+            sb.append(A);
+            if (sb.indexOf(B) >= 0) {
+                return count + 1;
+            }
+            return -1;
         }
-    }
 //leetcode submit region end(Prohibit modification and deletion)
 
+    }
 }
