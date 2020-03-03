@@ -22,12 +22,18 @@ public class No796 {
 //
 //
 
-
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
     class Solution {
         public boolean rotateString(String A, String B) {
             return A.length() == B.length() && (A + A).contains(B);
         }
+
+
+        //判断一个串是否为另一个串的子串的最优时间复杂度的算法是 KMP 算法。
+        //KMP 算法较难理解，这里给出了力扣第 28 题 实现 strstr()
+        //https://leetcode-cn.com/problems/implement-strstr/solution/kmp-suan-fa-xiang-jie-by-labuladong/
     }
 //leetcode submit region end(Prohibit modification and deletion)
 

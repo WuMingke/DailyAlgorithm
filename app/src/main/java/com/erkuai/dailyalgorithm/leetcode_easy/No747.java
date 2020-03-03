@@ -35,8 +35,9 @@ public class No747 {
 //
 // Related Topics 数组
 
-
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
     class Solution {
         public int dominantIndex(int[] nums) {
             int maxIndex = 0;

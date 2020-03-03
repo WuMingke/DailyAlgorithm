@@ -28,13 +28,15 @@ public class No771 {
 //
 // Related Topics 哈希表
 
-
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
     class Solution {
         public int numJewelsInStones(String J, String S) {
             Set<Character> Jset = new HashSet();
-            for (char j : J.toCharArray())
+            for (char j : J.toCharArray()){
                 Jset.add(j);
+            }
 
             int ans = 0;
             for (char s : S.toCharArray())

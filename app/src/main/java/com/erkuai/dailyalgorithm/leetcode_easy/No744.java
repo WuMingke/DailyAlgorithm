@@ -49,12 +49,14 @@ public class No744 {
 //
 // Related Topics 二分查找
 
-
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
     class Solution {
         public char nextGreatestLetter(char[] letters, char target) {
-            for (char c : letters)
+            for (char c : letters) {
                 if (c > target) return c;
+            }
             return letters[0];
         }
     }

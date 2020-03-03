@@ -43,9 +43,10 @@ public class No806 {
 // widths[i] 值的范围在 [2, 10]。
 //
 //
-
-
-    //leetcode submit region begin(Prohibit modification and deletion)
+    // 宽度求和
+    /**
+     * 1
+     */
     class Solution {
         public int[] numberOfLines(int[] widths, String S) {
             int lines = 1, width = 0;

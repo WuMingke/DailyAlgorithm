@@ -39,7 +39,15 @@ public class No849 {
 // Related Topics 数组
 
 
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 令 left[i] 为座位 i 到坐在 i 左边的人的最近距离。
+     * 同理 right[i] 为座位 i 到坐在 i 右边的人的最近距离。
+     * 那么该座位到最近的人的距离为 min(left[i], right[i])。
+     *
+     * 如果 i 左边的位置是空的，那么 left[i] = left[i - 1] + 1；
+     * 否则 left[i] = 0。right[i] 的计算方法类似。
+     *
+     */
     class Solution {
         public int maxDistToClosest(int[] seats) {
             int N = seats.length;
@@ -47,18 +55,18 @@ public class No849 {
             Arrays.fill(left, N);
             Arrays.fill(right, N);
 
-            for (int i = 0; i < N; ++i) {
+            for (int i = 0; i < N; i++) {
                 if (seats[i] == 1) left[i] = 0;
                 else if (i > 0) left[i] = left[i - 1] + 1;
             }
 
-            for (int i = N - 1; i >= 0; --i) {
+            for (int i = N - 1; i >= 0; i--) {
                 if (seats[i] == 1) right[i] = 0;
                 else if (i < N - 1) right[i] = right[i + 1] + 1;
             }
 
             int ans = 0;
-            for (int i = 0; i < N; ++i)
+            for (int i = 0; i < N; i++)
                 if (seats[i] == 0)
                     ans = Math.max(ans, Math.min(left[i], right[i]));
             return ans;

@@ -47,6 +47,10 @@ public class No783 {
      * TreeNode(int x) { val = x; }
      * }
      */
+
+    /**
+     * 1
+     */
     class Solution {
         List<Integer> vals;
 

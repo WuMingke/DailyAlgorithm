@@ -24,19 +24,19 @@ public class No788 {
 //
 // Related Topics 字符串
 
-
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
     class Solution {
         public int rotatedDigits(int N) {
-            // Count how many n in [1, N] are good.
             int ans = 0;
             for (int n = 1; n <= N; ++n)
-                if (good(n, false)) ans++;
+                if (good(n, false)) {
+                    ans++;
+                }
             return ans;
         }
 
-        // Return true if n is good.
-        // The flag is true iff we have an occurrence of 2, 5, 6, 9.
         public boolean good(int n, boolean flag) {
             if (n == 0) return flag;
 

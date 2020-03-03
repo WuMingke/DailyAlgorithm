@@ -24,15 +24,23 @@ public class No812 {
 //
 // Related Topics 数学
 
+    /**
+     * 鞋带公式求面积
+     *
+     * SΔABC=1/2|a−b|=1/2∣((x1*y2)+(x2*y3)+(x3*y1))−((y1*x2)+(y2*x3)+(y3*x1))∣
+     */
 
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
+
     class Solution {
         public double largestTriangleArea(int[][] points) {
             int N = points.length;
             double ans = 0;
-            for (int i = 0; i < N; ++i)
-                for (int j = i + 1; j < N; ++j)
-                    for (int k = j + 1; k < N; ++k)
+            for (int i = 0; i < N; i++)
+                for (int j = i + 1; j < N; j++)
+                    for (int k = j + 1; k < N; k++)
                         ans = Math.max(ans, area(points[i], points[j], points[k]));
             return ans;
         }

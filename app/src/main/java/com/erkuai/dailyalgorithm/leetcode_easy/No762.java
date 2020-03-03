@@ -40,11 +40,29 @@ public class No762 {
 //
 // Related Topics 位运算
 
+    /**
+     * 从 L 到 R，我们首先计算该数字转换为二进制有多少个 1。
+     * 如果数量是 2, 3, 5, 7, 11, 13, 17, 19，则我们增加计数。
+     * 最高是 19 的原因是 R≤10^6<2^20
+     *
+     * 10^6，转换为二进制，有 20 位，故 计算置位 个数不会超过 20。
+     */
 
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
     class Solution {
         public int countPrimeSetBits(int L, int R) {
-            return 1;
+            int ans = 0;
+            for (int x = L; x <= R; x++)
+                if (isSmallPrime(Integer.bitCount(x)))
+                    ans++;
+            return ans;
+        }
+
+        public boolean isSmallPrime(int x) {
+            return (x == 2 || x == 3 || x == 5 || x == 7 ||
+                    x == 11 || x == 13 || x == 17 || x == 19);
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)

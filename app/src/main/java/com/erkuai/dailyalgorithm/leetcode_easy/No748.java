@@ -43,8 +43,9 @@ public class No748 {
 //
 // Related Topics 哈希表
 
-
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
     class Solution {
         public String shortestCompletingWord(String licensePlate, String[] words) {
             int[] target = count(licensePlate);
@@ -57,13 +58,13 @@ public class No748 {
         }
 
         public boolean dominates(int[] count1, int[] count2) {
-            for (int i = 0; i < 26; ++i)
-                if (count1[i] < count2[i])
+            for (int i = 0; i < 26; i++)
+                if (count1[i] < count2[i])//对应位置的字母个数不等
                     return false;
             return true;
         }
 
-        public int[] count(String word) {
+        public int[] count(String word) {//统计原始字符串字母个数
             int[] ans = new int[26];
             for (char letter : word.toCharArray()) {
                 int index = Character.toLowerCase(letter) - 'a';

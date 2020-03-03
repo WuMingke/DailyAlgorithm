@@ -7,8 +7,7 @@ import java.util.Map;
 
 public class No811 {
     //一个网站域名，如"discuss.leetcode.com"，包含了多个子域名。作为顶级域名，常用的有"com"，下一级则有"leetcode.com"，最
-//低的一级为"discuss.leetcode.com"。当我们访问域名"discuss.leetcode.com"时，也同时访问了其父域名"leetcode.c
-//om"以及顶级域名 "com"。
+//低的一级为"discuss.leetcode.com"。当我们访问域名"discuss.leetcode.com"时，也同时访问了其父域名"leetcode.com"以及顶级域名 "com"。
 //
 // 给定一个带访问次数和域名的组合，要求分别计算每个域名被访问的次数。其格式为访问次数+空格+地址，例如："9001 discuss.leetcode.com
 //"。
@@ -49,13 +48,24 @@ public class No811 {
 //
 // Related Topics 哈希表
 
+    /**
+     * 对于包含一个 . 的域名 x.y，我们需要统计的是 x.y 和 y；对于包含
+     * 两个 . 的域名 a.b.c，我们需要统计的是 a.b.c，b.c 和 c。
+     * 在统计这些字符串时，我们可以使用哈希映射（HashMap）。
+     * 统计结束之后，我们遍历哈希映射并输出结果。
+     */
 
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 不懂？
+     */
     class Solution {
         public List<String> subdomainVisits(String[] cpdomains) {
+            //存储对应的字符串和出现的次数
             Map<String, Integer> counts = new HashMap();
             for (String domain : cpdomains) {
-                String[] cpinfo = domain.split("\\s+");
+                //将cpdomains分成了次数和域名info[0]是次数，info[1]是域名
+                String[] cpinfo = domain.split(" ");
+                //将域名按照“.”分开
                 String[] frags = cpinfo[1].split("\\.");
                 int count = Integer.valueOf(cpinfo[0]);
                 String cur = "";

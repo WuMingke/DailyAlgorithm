@@ -41,18 +41,22 @@ public class No819 {
 //
 // Related Topics 字符串
 
-
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
     class Solution {
         public String mostCommonWord(String paragraph, String[] banned) {
+            //测试字符串有些没有.
             paragraph += ".";
 
-            Set<String> banset = new HashSet();
-            for (String word : banned) banset.add(word);
-            Map<String, Integer> count = new HashMap();
+            Set<String> banset = new HashSet<>();
+            for (String word : banned) {
+                banset.add(word);
+            }
+            Map<String, Integer> count = new HashMap<>();
 
             String ans = "";
-            int ansfreq = 0;
+            int ansfreq = 0;// freq 频率
 
             StringBuilder word = new StringBuilder();
             for (char c : paragraph.toCharArray()) {

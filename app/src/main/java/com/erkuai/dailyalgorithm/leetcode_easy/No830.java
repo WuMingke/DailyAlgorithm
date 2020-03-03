@@ -38,13 +38,18 @@ public class No830 {
 // 说明: 1 <= S.length <= 1000
 // Related Topics 数组
 
-
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 我们维护两个指针 i, j，分别为分组的左端点和右端点，且 i <= j。
+     * 我们不断增加 j 的值，直到 S[i] 和 S[j] 不在一个分组中，
+     * 此时有 S[j] != S[j + 1] ，对应的分组为 [i, j]。
+     * 在这之后，我们令 i = j + 1，并开始寻找下一个分组。
+     *
+     */
     class Solution {
         public List<List<Integer>> largeGroupPositions(String S) {
-            List<List<Integer>> ans = new ArrayList();
+            List<List<Integer>> ans = new ArrayList<>();
             int i = 0, N = S.length(); // i is the start of each group
-            for (int j = 0; j < N; ++j) {
+            for (int j = 0; j < N; j++) {
                 if (j == N - 1 || S.charAt(j) != S.charAt(j + 1)) {
                     // Here, [i, j] represents a group.
                     if (j - i + 1 >= 3)

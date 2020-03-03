@@ -9,8 +9,7 @@ public class No852 {
 //A.length - 1]
 //
 //
-// 给定一个确定为山脉的数组，返回任何满足 A[0] < A[1] < ... A[i-1] < A[i] > A[i+1] > ... > A[A.leng
-//th - 1] 的 i 的值。
+// 给定一个确定为山脉的数组，返回任何满足 A[0] < A[1] < ... A[i-1] < A[i] > A[i+1] > ... > A[A.length - 1] 的 i 的值。
 //
 //
 //
@@ -38,8 +37,11 @@ public class No852 {
 //
 // Related Topics 二分查找
 
+    // 就是找最大的那个
 
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
     class Solution {
         public int peakIndexInMountainArray(int[] A) {
             int i = 0;

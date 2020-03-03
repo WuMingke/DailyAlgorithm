@@ -33,13 +33,17 @@ public class No832 {
 //
 // Related Topics 数组
 
-
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 我们可以不使用额外的（非常数）空间来完成翻转和反转操作。
+     * 对于 A[i][j]，我们将它和 A[i][c - j - 1] 进行交换（即翻转），
+     * 其中 c 是数组 A 的列数。在交换的同时，我们可以将这两个数进行反转。
+     *
+     */
     class Solution {
         public int[][] flipAndInvertImage(int[][] A) {
             int C = A[0].length;
             for (int[] row : A)
-                for (int i = 0; i < (C + 1) / 2; ++i) {
+                for (int i = 0; i < (C + 1) / 2; i++) {
                     int tmp = row[i] ^ 1;
                     row[i] = row[C - 1 - i] ^ 1;
                     row[C - 1 - i] = tmp;

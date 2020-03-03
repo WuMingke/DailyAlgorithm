@@ -46,11 +46,12 @@ public class No824 {
 //
 // Related Topics 字符串
 
-
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 按照规则写就行了
+     */
     class Solution {
         public String toGoatLatin(String S) {
-            Set<Character> vowel = new HashSet();
+            Set<Character> vowel = new HashSet<>();
             for (char c : new char[]{'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'})
                 vowel.add(c);
 

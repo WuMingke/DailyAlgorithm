@@ -27,8 +27,11 @@ public class No836 {
 //
 // Related Topics 数学
 
+    // 同canvas的rect
 
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
     class Solution {
         public boolean isRectangleOverlap(int[] rec1, int[] rec2) {
             return !(rec1[2] <= rec2[0] ||   // left

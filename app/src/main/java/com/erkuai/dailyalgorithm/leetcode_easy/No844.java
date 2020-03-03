@@ -48,15 +48,16 @@ public class No844 {
 //
 // Related Topics 栈 双指针
 
-
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 1
+     */
     class Solution {
         public boolean backspaceCompare(String S, String T) {
             return build(S).equals(build(T));
         }
 
         public String build(String S) {
-            Stack<Character> ans = new Stack();
+            Stack<Character> ans = new Stack<>();
             for (char c : S.toCharArray()) {
                 if (c != '#')
                     ans.push(c);
