@@ -37,7 +37,7 @@ public class No111 {
      */
 
     /**
-     * 1
+     * 1        同No104
      */
     class Solution {
         public int minDepth(TreeNode root) {

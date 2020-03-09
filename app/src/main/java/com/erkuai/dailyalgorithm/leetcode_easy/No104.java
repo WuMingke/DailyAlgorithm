@@ -36,7 +36,7 @@ public class No104 {
      */
 
     /**
-     * 1
+     * 1        同No111
      */
     class Solution {
         public int maxDepth(TreeNode root) {
