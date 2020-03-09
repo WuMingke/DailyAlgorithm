@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/AndroidStudioProjects-DailyAlgorithm.iml" filepath="$PROJECT_DIR$/AndroidStudioProjects-DailyAlgorithm.iml" group="DailyAlgorithm" />
       <module fileurl="file://$PROJECT_DIR$/DailyAlgorithm.iml" filepath="$PROJECT_DIR$/DailyAlgorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/DailyAlgorithm-app.iml" filepath="$PROJECT_DIR$/app/DailyAlgorithm-app.iml" group="DailyAlgorithm/app" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
