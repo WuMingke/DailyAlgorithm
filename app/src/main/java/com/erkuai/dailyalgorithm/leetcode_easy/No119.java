@@ -23,8 +23,10 @@ public class No119 {
 // Related Topics 数组
 
     /**
-     * 1
+     * 2
      */
+
+    // 打印杨辉三角的第n行
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {

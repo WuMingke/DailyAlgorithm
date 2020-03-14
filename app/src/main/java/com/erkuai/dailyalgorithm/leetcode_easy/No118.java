@@ -26,7 +26,7 @@ public class No118 {
 
 
     /**
-     * 1
+     * 2
      */
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {

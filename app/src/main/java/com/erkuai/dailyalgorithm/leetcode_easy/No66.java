@@ -24,10 +24,10 @@ public class No66 {
 // Related Topics 数组
 
     /**
-     * 1
+     * 2
      */
 
-    //leetcode submit region begin(Prohibit modification and deletion)
+    // 问题就是把最后一位+1，然后考虑进位的问题。
     static class Solution {
         public int[] plusOne(int[] digits) {
             for (int i = digits.length - 1; i >= 0; i--) {

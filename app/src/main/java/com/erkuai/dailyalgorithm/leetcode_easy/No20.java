@@ -47,7 +47,9 @@ public class No20 {
 // Related Topics 栈 字符串
 
 
-    //leetcode submit region begin(Prohibit modification and deletion)
+    /**
+     * 2
+     */
     class Solution {
         public boolean isValid(String s) {
 

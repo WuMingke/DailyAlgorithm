@@ -17,6 +17,9 @@ public class No1 {
 //
 // Related Topics 数组 哈希表
 
+    /**
+     * 2
+     */
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
@@ -29,8 +32,7 @@ public class No1 {
                 }
                 map.put(nums[i], i);
             }
-            throw new IllegalArgumentException("No two sum solution");
-
+            return null;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)

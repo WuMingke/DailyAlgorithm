@@ -21,7 +21,7 @@ public class No136 {
 // Related Topics 位运算 哈希表
 
     /**
-     * 1
+     * 2
      */
 
     //leetcode submit region begin(Prohibit modification and deletion)

@@ -42,20 +42,8 @@ public class No100 {
 // Related Topics 树 深度优先搜索
 
 
-//leetcode submit region begin(Prohibit modification and deletion)
-
     /**
-     * Definition for a binary tree node.
-     * public class TreeNode {
-     * int val;
-     * TreeNode left;
-     * TreeNode right;
-     * TreeNode(int x) { val = x; }
-     * }
-     */
-
-    /**
-     * 1
+     * 2
      */
     class Solution {
         public boolean isSameTree(TreeNode p, TreeNode q) {

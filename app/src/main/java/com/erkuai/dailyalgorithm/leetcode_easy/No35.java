@@ -32,7 +32,7 @@ public class No35 {
 // Related Topics 数组 二分查找
 
     /**
-     * 1
+     * 2
      */
 
     //leetcode submit region begin(Prohibit modification and deletion)

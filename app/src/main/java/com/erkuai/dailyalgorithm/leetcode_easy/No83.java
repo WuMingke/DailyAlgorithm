@@ -31,7 +31,7 @@ public class No83 {
      */
 
     /**
-     * 1
+     * 2
      */
     class Solution {
         public ListNode deleteDuplicates(ListNode head) {

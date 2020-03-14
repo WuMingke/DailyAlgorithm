@@ -20,7 +20,7 @@ public class No125 {
 // Related Topics 双指针 字符串
 
     /**
-     * 1
+     * 2
      */
 
     //leetcode submit region begin(Prohibit modification and deletion)

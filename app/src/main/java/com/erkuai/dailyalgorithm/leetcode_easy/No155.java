@@ -27,7 +27,7 @@ public class No155 {
 // Related Topics 栈 设计
 
     /**
-     * 1
+     * 2
      */
 
 
@@ -50,7 +50,7 @@ public class No155 {
             minStack = new Stack<>();
         }
 
-        public void push(int x) {
+        public void push(int x) { //压栈
             stack.push(x);
             if (!minStack.isEmpty()) {
                 Integer topValue = minStack.peek();
@@ -65,7 +65,7 @@ public class No155 {
         public void pop() {
             Integer pop = stack.pop();
             int top = minStack.peek();
-            if (pop == top) {
+            if (pop == top) {// 出栈
                 minStack.pop();
             }
         }

@@ -37,6 +37,9 @@ public class No9 {
 // 你能不将整数转为字符串来解决这个问题吗？
 // Related Topics 数学
 
+    /**
+     * 2
+     */
 
     //leetcode submit region begin(Prohibit modification and deletion)
     static class Solution {

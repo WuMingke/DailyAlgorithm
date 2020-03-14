@@ -23,7 +23,7 @@ public class No88 {
 // Related Topics 数组 双指针
 
     /**
-     * 1
+     * 2
      */
 
 //    public static void arraycopy(Object src, int srcPos, Object dest, int destPos, int length)

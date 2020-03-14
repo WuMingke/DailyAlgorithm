@@ -49,7 +49,7 @@ public class No27 {
 
 
     /**
-     * 1
+     * 2
      */
 
     //leetcode submit region begin(Prohibit modification and deletion)

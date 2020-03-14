@@ -33,19 +33,20 @@ public class No122 {
 // Related Topics 贪心算法 数组
 
     /**
-     * 1
+     * 2
      */
 
-    //leetcode submit region begin(Prohibit modification and deletion)
+    // 多次买卖，股票买卖最大利润
+
     class Solution {
         public int maxProfit(int[] prices) {
-            int maxProfit = 0;
+            int result = 0;
             for (int i = 1; i < prices.length; i++) {
                 if (prices[i] > prices[i - 1]) {//｜｜｜只关注增量｜｜｜
-                    maxProfit = maxProfit + prices[i] - prices[i - 1];
+                    result = result + (prices[i] - prices[i - 1]);
                 }
             }
-            return maxProfit;
+            return result;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)

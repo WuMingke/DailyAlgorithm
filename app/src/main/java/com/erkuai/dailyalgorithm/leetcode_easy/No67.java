@@ -25,7 +25,7 @@ public class No67 {
 // Related Topics 数学 字符串
 
     /**
-     * 1
+     * 2
      */
 
     //leetcode submit region begin(Prohibit modification and deletion)

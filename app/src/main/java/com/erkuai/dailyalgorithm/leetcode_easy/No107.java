@@ -32,25 +32,13 @@ public class No107 {
 // Related Topics 树 广度优先搜索
 
 
-//leetcode submit region begin(Prohibit modification and deletion)
-
-    /**
-     * Definition for a binary tree node.
-     * public class TreeNode {
-     * int val;
-     * TreeNode left;
-     * TreeNode right;
-     * TreeNode(int x) { val = x; }
-     * }
-     */
-
     /**
      * LinkedList 是一个继承于AbstractSequentialList的双向链表。
      * 它也可以被当作堆栈、队列或双端队列进行操作。
      */
 
     /**
-     * 1
+     * 2
      */
     class Solution {
         public List<List<Integer>> levelOrderBottom(TreeNode root) {

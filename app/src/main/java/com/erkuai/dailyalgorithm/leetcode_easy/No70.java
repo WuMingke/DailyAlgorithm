@@ -28,7 +28,7 @@ public class No70 {
 // Related Topics 动态规划
 
     /**
-     * 1
+     * 2
      */
 
     //leetcode submit region begin(Prohibit modification and deletion)
@@ -50,7 +50,7 @@ public class No70 {
     public static void main(String[] args) {
 
         Solution solution = new Solution();
-        System.out.println(solution.climbStairs(1));
+        System.out.println(solution.climbStairs(10));
     }
 //leetcode submit region end(Prohibit modification and deletion)
 

@@ -24,6 +24,11 @@ public class No21 {
      * ListNode(int x) { val = x; }
      * }
      */
+
+    /**
+     * 2
+     */
+
     class Solution {
         public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
             if (l1 == null) {

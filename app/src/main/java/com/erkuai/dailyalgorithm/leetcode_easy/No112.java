@@ -37,7 +37,7 @@ public class No112 {
      */
 
     /**
-     * 1
+     * 2
      */
     class Solution {
         public boolean hasPathSum(TreeNode root, int sum) {

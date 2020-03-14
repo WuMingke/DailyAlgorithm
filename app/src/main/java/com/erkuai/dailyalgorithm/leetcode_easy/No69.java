@@ -24,7 +24,7 @@ public class No69 {
 // Related Topics 数学 二分查找
 
     /**
-     * 1
+     * 2
      */
 
     //leetcode submit region begin(Prohibit modification and deletion)
