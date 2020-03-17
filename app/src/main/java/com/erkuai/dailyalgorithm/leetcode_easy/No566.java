@@ -63,14 +63,16 @@ public class No566 {
         public int[][] matrixReshape(int[][] nums, int r, int c) {
             int[][] res = new int[r][c];
             if (nums.length == 0 ||
-                    r * c != nums.length * nums[0].length) return nums;
-            Queue<Integer> list = new LinkedList<>();//先进后出
-            for (int i = 0; i < nums.length; i++) {
+                    r * c != nums.length * nums[0].length) return nums;//判断不能生成新矩阵
+
+            Queue<Integer> list = new LinkedList<>();// 先进后出
+
+            for (int i = 0; i < nums.length; i++) { // 队列赋值
                 for (int j = 0; j < nums[0].length; j++) {
                     list.add(nums[i][j]);
                 }
             }
-            for (int i = 0; i < r; i++) {
+            for (int i = 0; i < r; i++) { // 然后按照宽高遍历出来
                 for (int j = 0; j < c; j++) {
                     res[i][j] = list.remove();
                 }

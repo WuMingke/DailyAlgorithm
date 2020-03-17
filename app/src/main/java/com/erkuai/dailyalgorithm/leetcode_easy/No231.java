@@ -41,7 +41,7 @@ public class No231 {
 
 
     /**
-     * 1
+     * 2
      */
 
     class Solution {

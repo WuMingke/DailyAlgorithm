@@ -41,14 +41,11 @@ public class No234 {
      */
 
     class Solution {
-        /*
-                使用快慢指针找到链表的中间位置；
-                反转后半部分链表；
-                逐一对比前后两部分链表；
-                */
+
         public boolean isPalindrome(ListNode head) {
 
-            //第二种方法：
+            //第二种方法：用一个栈存储结点，后面的就在上面，然后从头遍历链表，跟栈中的比较，
+            // 就是逆序与顺序的比较了，就可以判断是否是回文
             if (head == null) {
                 return true;
             }
@@ -68,6 +65,11 @@ public class No234 {
             return true;
 
 
+               /*
+                使用快慢指针找到链表的中间位置；
+                反转后半部分链表；
+                逐一对比前后两部分链表；
+                */
             //第一种方法：
 //            // 边界条件：空链表或只有一个节点的链表
 //            if (head == null || head.next == null) {

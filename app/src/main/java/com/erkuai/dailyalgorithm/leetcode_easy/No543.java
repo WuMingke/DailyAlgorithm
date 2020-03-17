@@ -37,6 +37,8 @@ public class No543 {
 
     /**
      * 1
+     *
+     * 同No563
      */
     class Solution {
 

@@ -26,7 +26,7 @@ public class No203 {
      */
 
     /**
-     * 1
+     * 2
      */
 
     class Solution {

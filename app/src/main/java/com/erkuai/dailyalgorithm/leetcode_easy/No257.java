@@ -40,7 +40,7 @@ public class No257 {
      */
 
     /**
-     * 1
+     * 2
      */
     class Solution {
         public List<String> binaryTreePaths(TreeNode root) {

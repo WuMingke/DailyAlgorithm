@@ -32,7 +32,8 @@ public class No581 {
 
     class Solution {
         public int findUnsortedSubarray(int[] nums) {
-            int[] clone = nums.clone();
+            //int[] clone = nums.clone();
+            int[] clone = Arrays.copyOf(nums, nums.length);
             Arrays.sort(clone);
             int start = clone.length, end = 0;
             for (int i = 0; i < clone.length; i++) {

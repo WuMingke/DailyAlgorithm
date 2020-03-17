@@ -32,7 +32,7 @@ public class No219 {
      */
 
     /**
-     * 1
+     * 2
      */
     class Solution {
         public boolean containsNearbyDuplicate(int[] nums, int k) {

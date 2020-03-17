@@ -49,14 +49,14 @@ public class No448 {
     static class Solution {
         public static List<Integer> findDisappearedNumbers(int[] nums) {
 
-            HashMap<Integer, Boolean> hashTable = new HashMap<>();
+            HashMap<Integer, Boolean> map = new HashMap<>();
             for (int i = 0; i < nums.length; i++) {
-                hashTable.put(nums[i], true);
+                map.put(nums[i], true);
             }
             List<Integer> result = new LinkedList<>();
 
             for (int i = 1; i <= nums.length; i++) {
-                if (!hashTable.containsKey(i)) {
+                if (!map.containsKey(i)) {
                     result.add(i);
                 }
             }

@@ -34,7 +34,7 @@ public class No371 {
 //    结束条件：进位为0，即a为最终的求和结果。
 
     /**
-     * 1
+     * 2
      */
     class Solution {
         public int getSum(int a, int b) {

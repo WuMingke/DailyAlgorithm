@@ -20,7 +20,7 @@ public class No283 {
 // Related Topics 数组 双指针
 
     /**
-     * 1
+     * 2
      */
 
     class Solution {

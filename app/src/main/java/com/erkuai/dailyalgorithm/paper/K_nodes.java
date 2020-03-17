@@ -6,6 +6,10 @@ public class K_nodes {
 
     // 求出该二叉树中第K层中的结点个数（根结点为第0层）
 
+    /**
+     * 2
+     */
+
     private int k_nodes(TreeNode root, int k) {
         if (root == null)
             return 0;

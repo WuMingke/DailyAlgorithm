@@ -37,10 +37,13 @@ public class No538 {
 
     /**
      * 1
+     *
+     * 同No538
      */
     class Solution {
 
         //降序排列所有节点，把和依次累加
+        //后序遍历
 
         private int sum = 0;
 

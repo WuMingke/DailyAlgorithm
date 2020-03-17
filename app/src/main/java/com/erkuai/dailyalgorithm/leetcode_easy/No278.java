@@ -2,7 +2,7 @@ package com.erkuai.dailyalgorithm.leetcode_easy;
 
 public class No278 {
 
-    //你是产品经理，目前正在带领一个团队开发新的产品。不幸的是，你的产品的最新版本没有通过质量检测。由于每个版本都是基于之前的版本开发的，所以错误的版本之后的所有版本都是错的。
+
 //
 // 假设你有 n 个版本 [1, 2, ..., n]，你想找出导致之后所有版本出错的第一个错误的版本。
 //
@@ -25,7 +25,7 @@ public class No278 {
       boolean isBadVersion(int version); */
 
     /**
-     * 1
+     * 2
      * 二分查找
      */
 

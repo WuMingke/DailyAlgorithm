@@ -28,7 +28,7 @@ public class No202 {
      */
 
     /**
-     * 1
+     * 2
      */
 
     //leetcode submit region begin(Prohibit modification and deletion)
@@ -48,8 +48,7 @@ public class No202 {
 
         int bitSquareSum(int n) {
             int sum = 0;
-            while(n > 0)
-            {
+            while(n > 0) {
                 int bit = n % 10;
                 sum += bit * bit;
                 n = n / 10;

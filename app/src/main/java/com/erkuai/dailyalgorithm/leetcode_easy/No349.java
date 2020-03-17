@@ -36,7 +36,7 @@ public class No349 {
             HashSet<Integer> set2 = new HashSet<>();
             for (Integer n : nums2) set2.add(n);
 
-            set1.retainAll(set2);
+            set1.retainAll(set2);// 求交集
 
             int [] output = new int[set1.size()];
             int idx = 0;

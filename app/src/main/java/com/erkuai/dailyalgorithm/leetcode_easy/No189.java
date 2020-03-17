@@ -31,10 +31,9 @@ public class No189 {
 // Related Topics 数组
 
     /**
-     * 1
+     * 2
      */
 
-    //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public void rotate(int[] nums, int k) {
 

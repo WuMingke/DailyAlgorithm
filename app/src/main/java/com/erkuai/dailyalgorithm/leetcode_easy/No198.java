@@ -31,9 +31,8 @@ public class No198 {
      */
 
     /**
-     * 1
+     * 2
      */
-    //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int rob(int[] nums) {
             int prevMax = 0;

@@ -38,7 +38,7 @@ public class No171 {
 // Related Topics 数学
 
     /**
-     * 1
+     * 2
      */
 
     //与No168相似

@@ -38,7 +38,7 @@ public class No225 {
         public void push(int x) {
             q1.add(x);
             int sz = q1.size();
-            while (sz > 1) {
+            while (sz > 1) { //调换顺序
                 q1.add(q1.remove());
                 sz--;
             }

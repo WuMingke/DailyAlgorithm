@@ -24,7 +24,7 @@ public class No507 {
 
 
     /**
-     * 不懂？
+     * 2
      */
     class Solution {
         public boolean checkPerfectNumber(int num) {
@@ -33,13 +33,13 @@ public class No507 {
             for (int i = 1; i * i <= num; i++) {
                 if (num % i == 0) {
                     sum = sum + i;
-                    if (i * i != num) {
+                    if (i * i != num) {//去掉完全平方的情况
                         sum = sum + num / i;
                     }
                 }
             }
 
-            return sum - num == num;
+            return sum - num == num;//有因子1，那另一个因子包含本身num，
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)

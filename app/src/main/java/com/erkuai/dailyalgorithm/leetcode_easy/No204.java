@@ -22,7 +22,7 @@ public class No204 {
 
 
     /**
-     * 1
+     * 2
      */
 
     static class Solution {
@@ -31,16 +31,21 @@ public class No204 {
             // 将数组都初始化为 true
             Arrays.fill(isPrim, true);
 
-            for (int i = 2; i < n; i++)
-                if (isPrim[i])
+            for (int i = 2; i < n; i++) {
+                if (isPrim[i]) {
                     // i 的倍数不可能是素数了
-                    for (int j = 2 * i; j < n; j += i)
+                    for (int j = 2 * i; j < n; j += i) {//两倍 三倍 四倍。。。
                         isPrim[j] = false;
+                    }
+                }
+            }
 
             int count = 0;
-            for (int i = 2; i < n; i++)
-                if (isPrim[i]) count++;
-
+            for (int i = 2; i < n; i++) {
+                if (isPrim[i]) {
+                    count++;
+                }
+            }
             return count;
 
         }

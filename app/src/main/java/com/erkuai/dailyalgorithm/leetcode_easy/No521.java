@@ -24,6 +24,8 @@ public class No521 {
 
     /**
      * 1
+     *
+     * 独有，就可以是随便取？
      */
     class Solution {
         public int findLUSlength(String a, String b) {

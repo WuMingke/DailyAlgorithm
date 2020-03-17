@@ -32,11 +32,11 @@ public class No665 {
         public boolean checkPossibility(int[] nums) {
             int count = 0;
             for (int i = 0; i < nums.length - 1; i++) {
-                if (nums[i] > nums[i + 1]) {
+                if (nums[i] > nums[i + 1]) { // 发生了逆序，就要改一个数
                     if (i == 0 || nums[i + 1] >= nums[i - 1]) {
-                        nums[i] = nums[i + 1];
+                        nums[i] = nums[i + 1]; // 把前面的数改小
                     } else {
-                        nums[i + 1] = nums[i];
+                        nums[i + 1] = nums[i]; // 把后面的数改大
                     }
                     count++;
                 }

@@ -83,9 +83,6 @@ public class No443 {
      * 遍历到最后一个字符时也需要结算，因此将右指针的终点设为数组之外一格。当右指针移到终点时也要更新数组。
      */
 
-    /**
-     * 不懂?
-     */
 
     static class Solution {
         public int compress(char[] chars) {     // 数组大小范围： 1 <= chars.length <= 1000
@@ -97,11 +94,13 @@ public class No443 {
                 // 当遍历完成，或右指针元素不等于左指针元素时，更新数组
                 if (right == chars.length || chars[right] != chars[left]) {
                     // 更新字符
-                    chars[size++] = chars[left];
+                    chars[size] = chars[left];
+                    size++;
                     // 更新计数，当个数大于 1 时才更新
                     if (right - left > 1) {
-                        for (char c : String.valueOf(right - left).toCharArray()) {
-                            chars[size++] = c;
+                        for (char c : String.valueOf(right - left).toCharArray()) { //int 转换为 char
+                            chars[size] = c;
+                            size++;
                         }
                     }
                     left = right;

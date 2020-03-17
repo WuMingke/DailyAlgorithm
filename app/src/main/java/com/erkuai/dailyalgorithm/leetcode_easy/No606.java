@@ -70,7 +70,7 @@ public class No606 {
 
 
     /**
-     * 不懂？
+     * 2
      */
     class Solution {
         public String tree2str(TreeNode t) {

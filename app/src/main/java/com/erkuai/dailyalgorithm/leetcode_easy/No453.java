@@ -23,9 +23,6 @@ public class No453 {
 // Related Topics 数学
 
 
-    /**
-     * 不懂？
-     */
     class Solution {
         public int minMoves(int[] nums) {
             Arrays.sort(nums);

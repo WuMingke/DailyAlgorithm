@@ -1,5 +1,7 @@
 package com.erkuai.dailyalgorithm.leetcode_easy;
 
+import java.util.HashMap;
+
 public class No290 {
 
     //给定一种规律 pattern 和一个字符串 str ，判断 str 是否遵循相同的规律。
@@ -42,19 +44,41 @@ public class No290 {
      */
 
     /**
-     * 1
+     * 2
+     *
+     * 同No205
      */
     class Solution {
         public boolean wordPattern(String pattern, String str) {
-            String[] strs= str.split(" ");
-            if (strs.length != pattern.length()) return false;
-            for (int i = 0; i < pattern.length(); i++) {
-                if (pattern.indexOf(pattern.charAt(i))
-                        != indexOf(strs, strs[i])) {
-                    return false;
+
+            String[] strs = str.split(" ");
+            // char[] chars = pattern.toCharArray();
+            if (strs.length != pattern.length()) {
+                return false;
+            }
+
+            HashMap<String, Character> map = new HashMap<>();
+
+            for (int i = 0; i < strs.length; i++) {
+
+                if (map.containsKey(strs[i])) {
+                    if (map.get(strs[i]) != pattern.charAt(i)) return false;
+                } else {
+                    if (map.containsValue(pattern.charAt(i))) return false;
+                    map.put(strs[i], pattern.charAt(i));
                 }
             }
             return true;
+
+//            String[] strs= str.split(" ");
+//            if (strs.length != pattern.length()) return false;
+//            for (int i = 0; i < pattern.length(); i++) {
+//                if (pattern.indexOf(pattern.charAt(i))
+//                        != indexOf(strs, strs[i])) {
+//                    return false;
+//                }
+//            }
+//            return true;
         }
 
 

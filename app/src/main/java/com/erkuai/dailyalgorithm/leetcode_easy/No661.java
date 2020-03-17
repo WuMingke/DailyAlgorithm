@@ -41,11 +41,11 @@ public class No661 {
             int R = M.length, C = M[0].length;
             int[][] ans = new int[R][C];
 
-            for (int r = 0; r < R; ++r)//行
-                for (int c = 0; c < C; ++c) {//列
+            for (int r = 0; r < R; r++)//行
+                for (int c = 0; c < C; c++) {//列
                     int count = 0;
-                    for (int nr = r - 1; nr <= r + 1; ++nr) {
-                        for (int nc = c - 1; nc <= c + 1; ++nc) {
+                    for (int nr = r - 1; nr <= r + 1; nr++) {   // 周围的
+                        for (int nc = c - 1; nc <= c + 1; nc++) {
                             if (0 <= nr && nr < R && 0 <= nc && nc < C) {
                                 ans[r][c] += M[nr][nc];
                                 count++;

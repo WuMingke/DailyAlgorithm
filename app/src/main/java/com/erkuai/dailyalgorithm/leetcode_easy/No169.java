@@ -22,7 +22,7 @@ public class No169 {
 
 
     /**
-     * 1
+     * 2
      */
     //在数组中出现次数大于 ⌊ n/2 ⌋ 的元素，那么必然经过中点
     class Solution {

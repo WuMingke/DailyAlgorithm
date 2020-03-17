@@ -36,6 +36,7 @@ public class No628 {
         public int maximumProduct(int[] nums) {
             Arrays.sort(nums);
             //负数、正数
+            // 如果有负数的话，前两个乘积为正数才能最大
             return Math.max(nums[0] * nums[1] * nums[nums.length - 1],
                     nums[nums.length - 1] * nums[nums.length - 2] * nums[nums.length - 3]);
         }

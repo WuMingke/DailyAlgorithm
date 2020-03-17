@@ -32,10 +32,12 @@ public class No392 {
      */
     class Solution {
 
+        // 判断s是否是t的子序列
+
         //indexOf(char c,int m)意思是从第m位置开始寻找该索引，找到则返回该索引，否则返回-1
         public boolean isSubsequence(String s, String t) {
             char[] arr = s.toCharArray();
-            int j = -1;
+            int j = -1;// 在t中指向s中的字符
             for (int i = 0; i < arr.length; i++) {
                 j = t.indexOf(arr[i], j + 1);
                 if (j == -1) {

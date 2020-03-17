@@ -37,7 +37,7 @@ public class No263 {
     //leetcode submit region begin(Prohibit modification and deletion)
 
     /**
-     * 1
+     * 2
      */
     class Solution {
         public boolean isUgly(int num) {

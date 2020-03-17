@@ -24,7 +24,12 @@ public class No383 {
 
     /**
      * 1
+     *
+     *
+     * 同No387
      */
+
+    // 判断magazine是否可以由ransomNote中的字符组成
 
     class Solution {
         public boolean canConstruct(String ransomNote, String magazine) {

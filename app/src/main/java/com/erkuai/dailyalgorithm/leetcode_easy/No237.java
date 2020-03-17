@@ -51,7 +51,7 @@ public class No237 {
      */
 
     /**
-     * 1
+     * 2
      */
     class Solution {
         public void deleteNode(ListNode node) {

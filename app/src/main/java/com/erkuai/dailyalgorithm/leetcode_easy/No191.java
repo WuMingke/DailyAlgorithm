@@ -43,7 +43,7 @@ public class No191 {
 
 
     /**
-     * 1
+     * 2
      */
 
     public class Solution {

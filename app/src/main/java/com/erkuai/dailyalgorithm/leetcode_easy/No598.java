@@ -61,17 +61,17 @@ public class No598 {
     static class Solution {
         public int maxCount(int m, int n, int[][] ops) {
             for (int[] op : ops) {
-                m = Math.min(m, op[0]);
-                n = Math.min(n, op[1]);
+                m = Math.min(m, op[0]);// 在行中选最小的
+                n = Math.min(n, op[1]); // 在列中选最小的
             }
-            return m * n;
+            return m * n; // 乘积
         }
 
     }
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        int i = solution.maxCount(3, 3, new int[][]{{1, 2}, {3, 4}});
+        int i = solution.maxCount(4, 4, new int[][]{{1, 2,3}, {3, 4,6}});
         System.out.println(i);
     }
 //leetcode submit region end(Prohibit modification and deletion)

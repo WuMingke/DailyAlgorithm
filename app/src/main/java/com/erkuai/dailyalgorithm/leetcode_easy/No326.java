@@ -29,12 +29,14 @@ public class No326 {
 //你能不使用循环或者递归来完成本题吗？
 // Related Topics 数学
 
+
+
     /**
-     * 不断除以3
+     * 2
      */
 
     /**
-     * 1
+     * 不断除以3
      */
 
     class Solution {

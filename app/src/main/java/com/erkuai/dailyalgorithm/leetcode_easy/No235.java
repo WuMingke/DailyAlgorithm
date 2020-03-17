@@ -63,7 +63,7 @@ public class No235 {
 //        如果条件 2 和条件 3 都不成立，这就意味着我们已经找到节 p 和节点 q 的 LCA 了
 
         /**
-         * 1
+         * 2
          */
         public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
             int parentVal = root.val;

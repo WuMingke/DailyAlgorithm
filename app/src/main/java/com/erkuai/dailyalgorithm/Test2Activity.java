@@ -2,7 +2,9 @@ package com.erkuai.dailyalgorithm;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.support.annotation.Nullable;
+import android.support.v4.view.AsyncLayoutInflater;
 import android.util.Log;
 
 import org.jetbrains.annotations.NotNull;
@@ -51,5 +53,8 @@ public class Test2Activity extends Activity {
                 Log.i(TAG, "onResponse: " + string);
             }
         });
+
+
+//        AsyncLayoutInflater
     }
 }

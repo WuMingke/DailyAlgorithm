@@ -42,6 +42,8 @@ public class No530 {
 
     /**
      * 1
+     *
+     * 同No501
      */
     class Solution {
 
@@ -53,7 +55,7 @@ public class No530 {
             return res;
         }
 
-        private void inorder(TreeNode root) {
+        private void inorder(TreeNode root) { //中序遍历，就是一个升序
             if (root == null) return;
             inorder(root.left);
             if (pre != null) res = Math.min(res, root.val - pre.val);

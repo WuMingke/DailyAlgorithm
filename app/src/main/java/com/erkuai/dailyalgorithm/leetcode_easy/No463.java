@@ -38,7 +38,7 @@ public class No463 {
             for (int i = 0; i < grid.length; i++) {
                 for (int j = 0; j < grid[i].length; j++) {
                     if (grid[i][j] == 1) {
-                        count = count + 4;
+                        count = count + 4; //有一个 1 ，就+4
 
                         //上面
                         if (i > 0 && grid[i - 1][j] == 1) {

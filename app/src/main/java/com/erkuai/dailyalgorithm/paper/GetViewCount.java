@@ -7,6 +7,10 @@ public class GetViewCount {
 
     // 获取ViewGroup里的view数量
 
+    /**
+     * 2
+     */
+
     public int getCount(ViewGroup viewGroup) {
 
         int count = viewGroup.getChildCount();

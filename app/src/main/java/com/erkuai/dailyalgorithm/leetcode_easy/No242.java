@@ -26,7 +26,7 @@ public class No242 {
 // Related Topics 排序 哈希表
 
     /**
-     * 1
+     * 2
      */
 
     //leetcode submit region begin(Prohibit modification and deletion)

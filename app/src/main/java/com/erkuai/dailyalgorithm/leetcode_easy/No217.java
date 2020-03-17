@@ -25,7 +25,7 @@ public class No217 {
 // Related Topics 数组 哈希表
 
     /**
-     * 1
+     * 2
      */
 
     //leetcode submit region begin(Prohibit modification and deletion)

@@ -44,7 +44,7 @@ public class No226 {
      */
 
     /**
-     * 1
+     * 2
      */
     class Solution {
         public TreeNode invertTree(TreeNode root) {
